@@ -60,7 +60,7 @@
   - zipcode-tw-react：臺灣郵遞區號及地址套件
 
 # 啟動專案
-- 匯入sql檔建立資料庫(gotofarm_node > FINAL.sql)
+- 匯入sql檔建立資料庫(GoToFarm/gotofarm_node/FINAL.sql)
 - 安裝node套件，啟動node
 - 安裝react套件，啟動react
 
