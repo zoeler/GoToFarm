@@ -1,0 +1,950 @@
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('./../../public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('./../../public/Fonts/GenSenRounded-M.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-R;
+  src: url('./../../public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('./../../public/Fonts/GenSenRounded-L.otf');
+}
+
+.font-B {
+  font-family: GenSenRoundedTW-B;
+}
+.font-M {
+  font-family: GenSenRoundedTW-M;
+}
+.font-R {
+  font-family: GenSenRoundedTW-R;
+}
+.font-L {
+  font-family: GenSenRoundedTW-L;
+}
+
+/* ----------------以下是產品明細專用CSS--------------- */
+
+/* 商品卡 */
+.P-product-main {
+  width: 90%;
+  background-color: #fff;
+  height: 600px;
+  border: 1px solid #d5baa6;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px 5px 1px #d5baa6; */
+  padding: 100px 50px 50px;
+  margin-bottom: 100px;
+}
+
+/* 商品卡-圖片 */
+.P-product-main-img {
+  width: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.P-product-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 商品卡-資訊 */
+.P-product-main-info {
+  width: 50%;
+  max-width: 500px;
+  max-height: 500px;
+}
+.P-product-main-info h1 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2em;
+  color: #2c5c58;
+}
+.P-product-main-info p {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  padding: 5px 0;
+}
+.P-product-main-info h2 {
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.2em;
+  color: #a35d73;
+}
+.P-product-main-info svg {
+  margin-bottom: 5px;
+  width: 30px;
+}
+
+/* 購物車數量 */
+.P-counter {
+  width: 250px;
+  height: 50px;
+}
+.P-counter p {
+  background-image: url('../../public/Textures/wallpaperLight.png');
+  background-size: cover;
+  width: 50%;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  color: #a88686;
+  text-align: center;
+  padding: 0;
+}
+.P-counter button {
+  border: none;
+  background-image: url('../../public/Textures/buttonYsub.png');
+  background-size: cover;
+  width: 25%;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  color: #a88686;
+}
+.P-counter button:hover {
+  background-image: url('../../public/Textures/buttonsub.png');
+  background-size: cover;
+}
+.P-counter button:first-child {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+.P-counter button:last-child {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+.P-counter button:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+  opacity: 1;
+}
+
+/* 加入購物車按鈕 */
+.P-btn-cart {
+  width: 250px;
+  height: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.P-btn-cart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.P-btn-cart :hover {
+  filter: drop-shadow(1px 1px 5px #d5baa6);
+}
+
+.P-btn-cart:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+
+/* .P-addcart {
+  border: none;
+  border-radius: 0.375rem;
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url('../../public/Textures/buttonYsub.png');
+  background-size: cover;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 5px #fff;
+}
+.P-addcart span::before {
+  content: '加入購物車';
+}
+.P-addcart span::before {
+  -webkit-text-stroke: 0px;
+  position: absolute;
+  color: #a88686;
+}
+.P-addcart:hover {
+  background-image: url('../../public/Textures/buttonsub.png');
+  background-size: cover;
+}
+.P-addcart:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+  opacity: 1;
+} */
+
+/* 加入收藏按鈕 */
+.P-btn-fav {
+  width: 250px;
+  height: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.P-btn-fav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.P-btn-fav :hover {
+  filter: drop-shadow(1px 1px 5px #d5baa6);
+}
+
+.P-btn-fav:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+/* .P-addbookmark {
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  background-image: url('../../public/Textures/wallpaperR.png');
+  background-size: cover;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 5px #fff;
+}
+.P-addbookmark span::before {
+  content: '加入收藏';
+}
+.P-addbookmark span::before {
+  -webkit-text-stroke: 0px;
+  position: absolute;
+  color: #a88686;
+}
+.P-addbookmark:hover {
+  background-image: url('../../public/Textures/buttonsub.png');
+  background-size: cover;
+}
+.P-addbookmark:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+  opacity: 1;
+} */
+
+/* 商品卡----手機版 */
+@media screen and (max-width: 768px) {
+  .P-product-main {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: auto;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .P-product-main-img {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .P-product-main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .P-product-main-info {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 20px;
+  }
+  .P-product-main-info h1 {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0.2em;
+    color: #2c5c58;
+    margin: 0;
+  }
+  .P-product-main-info p {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    padding: 5px 0;
+    margin: 0;
+  }
+  .P-product-main-info h2 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: #a35d73;
+  }
+
+  /* 加入購物車 */
+  .P-mobile-buy {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-image: url('../../public/Textures/wallpaperLight.png');
+    background-size: cover;
+    padding: 10px 10px;
+    color: #a88686;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    width: 100%;
+  }
+  .P-counter {
+    width: 150px;
+    height: 50px;
+  }
+  .P-counter p {
+    background-image: none;
+    background-color: #ffffff78;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #a88686;
+    text-align: center;
+  }
+  .P-counter button {
+    border: none;
+    background-image: url('../../public/Textures/buttonsub.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #a88686;
+  }
+  .P-counter button:hover {
+    background-image: url('../../public/Textures/buttonsub.png');
+    background-size: cover;
+  }
+  .P-counter button:first-child {
+    border-radius: 0.375rem 0 0 0.375rem;
+  }
+  .P-counter button:last-child {
+    border-radius: 0 0.375rem 0.375rem 0;
+  }
+  .P-counter button:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+  .P-addcart {
+    border: none;
+    border-radius: 0.375rem;
+    background-image: url('../../public/Textures/buttonYsub.png');
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+  }
+  .P-addbookmark {
+    border: none;
+    border-radius: 0.375rem;
+    background-image: url('../../public/Textures/wallpaperR.png');
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+  }
+  .P-addcart:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+  }
+  .P-addbookmark:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+  }
+}
+
+/* 商品詳細資訊卡 */
+/* 切換標籤 */
+.P-product-more-tag {
+  width: 90%;
+  padding-left: 50px;
+}
+.P-product-more-tag div {
+  width: 200px;
+  height: 100px;
+  border-radius: 0.375rem;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.P-product-more-tag div:hover {
+  transform: translateY(-10px);
+}
+
+.P-product-more-tag div.pop {
+  transform: translateY(-10px);
+}
+
+.P-product-more-tag div:first-child {
+  background-image: url('../../public/Textures/buttonYsub.png');
+  background-size: cover;
+  color: #927272;
+}
+.P-product-more-tag div:last-child {
+  background-image: url('../../public/Textures/ButtonGdark.png');
+  background-size: cover;
+  color: #2c5c58;
+}
+
+/* 產品介紹 */
+.P-product-more {
+  width: 90%;
+  background-color: #fff;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+  padding: 50px;
+  /* position: absolute; */
+  /* top: 50px; */
+  transform: translateY(-50px);
+}
+.P-product-more-img {
+  width: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.P-product-more-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 農夫的slide設定 */
+.P-farmer-ul {
+  width: 1500px;
+  transition: 0.5s;
+  /* overflow: hidden; */
+}
+.P-farmer-ul.two {
+  transform: translateX(-500px);
+}
+.P-farmer-ul.three {
+  transform: translateX(-1000px);
+}
+.P-farmer-dot {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 10;
+}
+.P-farmer-dot li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ece9df;
+}
+.P-farmer-dot li.active {
+  background-color: #eac645;
+}
+.P-farmer-arrow {
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  top: 45%;
+  z-index: 10;
+}
+
+.P-farmer-arrow i {
+  color: #ece9df;
+  font-size: 48px;
+}
+
+.P-farmer-arrow i:hover {
+  color: #eac645;
+}
+
+.P-farmer-arrow i {
+  width: 50px;
+  padding: 0 10px;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+.P-product-more-info {
+  width: 50%;
+}
+.P-product-more-info h1 {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: #57ac6f;
+  margin-bottom: 30px;
+}
+.P-product-more-info h3 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: #eac645;
+  margin-bottom: 30px;
+}
+.P-product-more-info p {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.2em;
+  text-align: justify;
+  color: #a88686;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /*指定行數*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 產地介紹 */
+.P-product-more-farmer {
+  width: 50%;
+}
+.P-product-more-farmer h1 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.2em;
+  color: #57ac6f;
+  margin-bottom: 30px;
+}
+.P-product-more-farmer h3 {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #eac645;
+  margin-bottom: 30px;
+}
+.P-product-more-farmer p {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.2em;
+  text-align: justify;
+  color: #a88686;
+}
+
+/* 商品詳細資訊卡----手機版 */
+
+@media screen and (max-width: 768px) {
+  .P-product-more-tag {
+    width: 80%;
+    padding: 0px;
+  }
+  .P-product-more-tag div {
+    width: 200px;
+    height: 100px;
+    border-radius: 0.375rem;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.2s;
+  }
+  .P-product-more-tag div:hover {
+    transform: translateY(-10px);
+  }
+  .P-product-more-tag div:first-child {
+    background-image: url('../../public/Textures/buttonYsub.png');
+    background-size: cover;
+    color: #927272;
+  }
+  .P-product-more-tag div:last-child {
+    background-image: url('../../public/Textures/ButtonGdark.png');
+    background-size: cover;
+    color: #2c5c58;
+  }
+  /* 產品介紹 */
+  .P-product-more {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    padding: 20px;
+  }
+  .P-product-more-img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+  }
+  .P-product-more-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .P-product-more-info {
+    width: 100%;
+  }
+  .P-product-more-info h1 {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: #57ac6f;
+    margin-bottom: 20px;
+  }
+  .P-product-more-info h3 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: #eac645;
+    margin-bottom: 20px;
+  }
+  .P-product-more-info p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+    color: #a88686;
+  }
+
+  /* 產地介紹 */
+  .P-product-more-farmer {
+    width: 100%;
+  }
+  .P-product-more-farmer h1 {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0.2em;
+    color: #57ac6f;
+    margin-bottom: 20px;
+  }
+  .P-product-more-farmer h3 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #eac645;
+    margin-bottom: 20px;
+  }
+  .P-product-more-farmer p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+    color: #a88686;
+  }
+}
+
+/* 評論標題 */
+.P-commnet-title {
+  color: #eac645;
+  letter-spacing: 0.2rem;
+}
+.P-commnet-title span {
+  color: #57ac6f;
+}
+
+/* 評論排序 */
+.PP-product-btn {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 1;
+}
+.PP-product-btn button {
+  background-image: url('../../public/Textures/wallpaper.png');
+  background-size: cover;
+  color: #a88686;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+}
+.PP-product-btn button:hover {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+  color: #2c5c58;
+}
+
+.PP-product-btn button.active {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+  color: #2c5c58;
+}
+
+.PP-product-btn button:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+
+/* 整個評論區 */
+.P-commnet {
+  width: 100%;
+  height: 600px;
+  background-color: #e8d1c0;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.P-wavetop {
+  position: absolute;
+  top: 0;
+}
+.P-wavebottom {
+  position: absolute;
+  bottom: 0;
+}
+/* 河道範圍 */
+.P-commnet-river {
+  position: absolute;
+  top: 130px;
+  /* background-color: #faeb1b38; */
+  width: 10000px;
+  height: 350px;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  /* transition: 100s; */
+  transition: 0.5s;
+  transition-timing-function: linear;
+  animation: river 100s linear 0s infinite normal both;
+  animation-play-state: running;
+}
+
+.P-commnet-river.two {
+  animation: rivertwo 100s linear 0s infinite normal both;
+  animation-play-state: running;
+}
+
+.P-commnet-river:hover {
+  animation-play-state: paused;
+}
+
+/* .P-commnet-river.move {
+  transform: translateX(-9500px);
+} */
+
+/* 評論本體 */
+.P-commnet-info {
+  width: 450px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 1px #d5baa6;
+  border-radius: 20px;
+  position: absolute;
+  transition: 0.2s;
+  /* top: 20px; */
+  padding: 10px;
+}
+.P-commnet-info:hover {
+  transform: translateY(-10px);
+}
+.P-commnet-avatar {
+  margin-left: 20px;
+  color: #2c5c58;
+}
+.P-commnet-avatar div:first-child {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  box-shadow: 0px 1px 10px 1px #d5baa6;
+}
+.P-commnet-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.P-commnet-text {
+  padding: 0 20px;
+}
+.P-commnet-text p {
+  margin: 0;
+}
+
+.P-commnet-text span {
+  margin-left: auto;
+  color: #a88686;
+}
+
+@keyframes river {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -8550px;
+  }
+}
+
+@keyframes rivertwo {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -8550px;
+  }
+}
+
+/* 評論本體未展開 */
+.P-commnet-info-s {
+  transition: 0.2s;
+}
+.P-commnet-info-s:hover {
+  transform: translateY(-10px);
+}
+.P-commnet-info-s div {
+  z-index: 1;
+}
+.P-commnet-info-s span {
+  width: 120px;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 1px #d5baa6;
+  border-radius: 30px;
+  margin-left: -50px;
+  z-index: 0;
+  text-align: right;
+  line-height: 70px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+/* 評論----手機版 */
+
+@media screen and (max-width: 768px) {
+  .P-commnet {
+    width: 100%;
+    height: 230px;
+    background-color: transparent;
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+  .PP-product-btn {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .PP-product-btn button {
+    background-image: url('../../public/Textures/wallpaper.png');
+    background-size: cover;
+    color: #a88686;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .PP-product-btn button:hover {
+    background-image: url('../../public/Textures/buttonGmain.png');
+    background-size: cover;
+    color: #2c5c58;
+  }
+
+  .P-commnet-river {
+    position: relative;
+    width: 8000px;
+    top: 0px;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .P-commnet-info {
+    width: 375px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    border-radius: 20px;
+    position: absolute;
+    transition: 0;
+    top: 10px;
+    padding: 10px;
+  }
+  .P-commnet-info:hover {
+    transform: none;
+  }
+}
+
+/* 其他推薦商品 */
+
+.P-other {
+  margin-top: 50px;
+  width: 80%;
+}
+.PP-product-card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.PP-product-card:hover {
+  transform: translateY(-10px);
+}
+.PP-product-card:hover .P-product-card-title {
+  color: #a35d73;
+}
+.PP-product-card-img {
+  width: 90%;
+  height: 160px;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.PP-product-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.PP-product-card-title {
+  color: #2c5c58;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.PP-product-card-price {
+  background-image: url('../../public/Textures/wallpaperLight.png');
+  background-size: cover;
+  padding: 10px 10px;
+  color: #a88686;
+  letter-spacing: 0.1em;
+  font-size: 23px;
+  position: relative;
+}
+.PP-product-card-price svg {
+  cursor: pointer;
+  outline: none;
+}
+
+.PP-product-card-price svg:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+
+.PP-product-card-price svg:nth-child(3):focus + .P-plus {
+  opacity: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* 其他推薦商品---手機版 */
+
+@media screen and (max-width: 768px) {
+  .P-other {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .PP-product-card-title {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .PP-product-card-price {
+    font-size: 20px;
+  }
+}

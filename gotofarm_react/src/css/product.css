@@ -1,0 +1,550 @@
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('./../../public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('./../../public/Fonts/GenSenRounded-M.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-R;
+  src: url('./../../public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('./../../public/Fonts/GenSenRounded-L.otf');
+}
+
+.font-B {
+  font-family: GenSenRoundedTW-B;
+}
+.font-M {
+  font-family: GenSenRoundedTW-M;
+}
+.font-R {
+  font-family: GenSenRoundedTW-R;
+}
+.font-L {
+  font-family: GenSenRoundedTW-L;
+}
+
+/* 字級大小 */
+.f-13 {
+  font-size: clamp(0.6rem, 1vw, 0.8125rem);
+}
+.f-16 {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+.f-20 {
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+}
+.f-24 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.f-32 {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------以下是產品專用CSS--------------- */
+
+/* header */
+
+.P-wavebottom {
+  position: absolute;
+  bottom: -20px;
+}
+.P-header-bk {
+  width: 100%;
+  height: 400px;
+  background: url('./../../public/Images/p-head.jpg');
+  background-size: cover;
+  background-position-y: 50%;
+  position: relative;
+}
+.P-bestseller-card {
+  position: absolute;
+  right: 30%;
+  bottom: 40px;
+  transition: 0.2s;
+  /* border: 1px solid red; */
+}
+.P-bestseller {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 10px solid #f5c951;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.P-bestseller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.P-bestseller-king {
+  width: 50px;
+  position: absolute;
+  transform: translateX(165px) rotate(46deg);
+  transition: 0.2s;
+}
+.P-bestseller-text {
+  padding: 2px 30px;
+  color: #ea4545;
+  text-align: center;
+  background-color: #f5c951;
+  /* background-image: url('../../public/Textures/wallpaper.png');
+  background-size: cover; */
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: GenSenRoundedTW-B;
+  line-height: 40px;
+  position: absolute;
+  transform: translateY(-100px) translateX(25px);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.P-bestseller-card:hover .P-bestseller {
+  box-shadow: 2px 2px 5px 1px #d5baa6;
+}
+
+.P-bestseller-card:hover .P-bestseller-king {
+  transform: translate(175px, -10px) rotate(46deg);
+  width: 60px;
+}
+
+.P-bestseller-card:hover .P-bestseller-text {
+  opacity: 1;
+}
+
+.P-bestseller-card:hover {
+  transform: translateY(-20px);
+}
+
+@media screen and (max-width: 768px) {
+  .P-bestseller-card {
+    position: absolute;
+    right: 20%;
+    bottom: 10px;
+    transition: 0.5s;
+  }
+  .P-header-bk {
+    height: 200px;
+  }
+  .P-bestseller {
+    width: 150px;
+    border: 8px solid #f5c951;
+  }
+  .P-bestseller-king {
+    width: 40px;
+    transform: translateX(125px) rotate(46deg);
+  }
+}
+
+/* 商城標題&排序 */
+.P-product-title > div {
+  transform: rotate(-10deg) translateY(-20px);
+}
+.P-product-title h1 {
+  color: #eac645;
+}
+.P-product-title span {
+  color: #a35d73;
+  font-size: 20px;
+}
+
+.P-product-btn button {
+  background-image: url('../../public/Textures/wallpaper.png');
+  background-size: cover;
+  color: #a88686;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  /* margin-right: 10px; */
+}
+
+.P-product-btn button:first-child {
+  background-image: url('../../public/Textures/buttonYsub.png');
+  background-size: cover;
+  width: 120px;
+  color: #a35d73;
+}
+
+.P-product-btn button:hover {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+  color: #2c5c58;
+}
+
+.P-product-btn button.active {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+  color: #2c5c58;
+}
+
+.P-product-btn button:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .P-product-title span {
+    color: #a35d73;
+    font-size: 14px;
+  }
+}
+
+/* 側邊檢索&篩選 */
+
+.P-side {
+  width: 20%;
+}
+
+.P-search {
+  height: 50px;
+  width: 90%;
+}
+.P-search input {
+  border: none;
+  border-radius: 0.375rem 0 0 0.375rem;
+  background-image: url('../../public/Textures/wallpaper.png');
+  background-size: cover;
+  width: 80%;
+  height: 50px;
+  padding-left: 10px;
+  color: #37797c;
+}
+
+.P-search input:-webkit-autofill,
+.P-search input:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #37797c;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.P-search input:focus {
+  outline: none;
+  background-image: none;
+  background-color: #9ad68354;
+}
+.P-search button {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0 0.375rem 0.375rem 0;
+  border: none;
+  width: 20%;
+  height: 50px;
+}
+
+.P-category-box {
+  width: 100%;
+  height: fit-content;
+  background-color: #faf0cf;
+  background-image: url('../../public/Textures/wallpaperLight.png');
+  background-size: cover;
+  /* background-origin: */
+  border-radius: 0.375rem;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #37797c;
+}
+
+.P-category > li {
+  font-size: 24px;
+  margin-left: 10px;
+  letter-spacing: 0.2em;
+}
+.P-category > li > a {
+  color: #37797c;
+  margin-left: 10px;
+  padding: 5px 0;
+}
+
+.P-category > li > a.categoryActive {
+  color: #a35d73;
+  border-bottom: 2px dotted #a35d73;
+}
+.P-category > li > a:hover {
+  color: #a35d73;
+  border-bottom: 2px dotted #a35d73;
+}
+.P-category-farmer {
+  font-size: 16px;
+  color: #57ac6f;
+  margin-left: 60px;
+}
+.P-category-farmer > li {
+  margin-top: 5px;
+}
+.P-category-farmer > li:first-child {
+  font-size: 20px;
+  color: #37797c;
+}
+.P-category-farmer > li > span {
+  margin-left: 10px;
+}
+
+.P-category-farmer label {
+  padding: 0;
+  cursor: pointer;
+}
+
+.P-category input[type='checkbox'] {
+  display: none;
+}
+
+.P-category input[type='checkbox'] + span {
+  display: inline-block;
+  padding-left: 28px;
+  line-height: 20px;
+  background: url('./../../public/Icons/checkbox.svg') no-repeat left top;
+  user-select: none;
+}
+
+.P-category input[type='checkbox']:checked + span {
+  background: url('./../../public/Icons/checkboxChecked.svg') no-repeat left top;
+}
+
+.P-rabbit {
+  position: relative;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .P-sideM {
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    /* top: 80px; */
+    overflow: auto;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .P-sideM.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .P-category-box {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  .P-category-box-close {
+    display: block;
+    cursor: pointer;
+  }
+
+  .P-blur {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #876c568b;
+    position: fixed;
+    z-index: -1;
+    overflow-y: initial !important;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .P-blur.show {
+    opacity: 1;
+    z-index: 101;
+  }
+}
+
+/* 商品列表 */
+.P-main {
+  width: 80%;
+}
+
+.P-notfound {
+  font-size: 36px;
+  color: #a88686;
+}
+
+.P-product-card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+.P-product-card:hover {
+  transform: translateY(-10px);
+}
+
+.P-product-card:hover .P-product-card-title {
+  color: #a35d73;
+}
+
+.P-product-card-img {
+  width: 90%;
+  height: 160px;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.P-product-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.P-product-card-title {
+  color: #2c5c58;
+  font-size: 20px;
+  margin: 10px 12px 0 12px;
+  letter-spacing: 0.1em;
+}
+
+.P-product-card-info {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin: 5px 12px 0 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*指定行數*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.P-product-card-star {
+  margin: 0px 12px 0 12px;
+}
+
+.P-product-card-price {
+  background-image: url('../../public/Textures/wallpaperLight.png');
+  background-size: cover;
+  padding: 10px 10px;
+  color: #886e6e;
+  letter-spacing: 0.1em;
+  font-size: 23px;
+  position: relative;
+}
+
+.P-product-card-price span::before {
+  content: '$';
+  font-size: 20px;
+  color: #a88686;
+  letter-spacing: 0.1em;
+}
+
+.P-product-card-price svg {
+  cursor: pointer;
+  outline: none;
+}
+
+.P-product-card-price svg:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+}
+
+/* .P-product-card-price svg:nth-child(3):active {
+  transform: rotate(-30deg);
+  transition: 0.2s;
+} */
+
+.P-plus {
+  opacity: 0;
+  max-height: 0;
+  max-width: 0;
+  transition: 1s;
+  position: absolute;
+  font-size: 16px;
+  color: #32af4d;
+  top: -3px;
+  font-weight: 600;
+}
+
+.P-product-card-price svg:nth-child(3):focus + .P-plus {
+  opacity: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .P-main {
+    width: 100%;
+  }
+  .P-product-card-title {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .P-product-card-info {
+    font-size: 12px;
+  }
+}
+
+/* 分頁按鈕 */
+
+.P-page li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('../../public/Textures/wallpaper.png');
+  background-size: cover;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #2c5c58;
+}
+
+.P-page li:hover {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+}
+
+.P-page li.active {
+  background-image: url('../../public/Textures/buttonGmain.png');
+  background-size: cover;
+}
+
+.P-page a {
+  color: #2c5c58;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+/* 登入提醒 */
+
+.P-LoginAlert {
+  margin-top: 400px;
+  width: 30%;
+  height: 40%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .P-LoginAlert {
+    width: 80%;
+  }
+}

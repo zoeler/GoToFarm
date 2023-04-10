@@ -1,0 +1,359 @@
+.cm-session{
+    height: auto !important;
+    background-position: center !important;
+    background-attachment: fixed;
+}
+
+.cm-artical-card{
+    position: relative;
+    width: 480px;
+    height: 370px;
+    background-image: url(/public/Textures/member-card-noshadow.png);
+    border: 0px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:3px 3px 5px rgba(255, 231, 186, 0.125) ;
+    bottom:0px;
+    transition: 0.5s;
+
+}
+
+.cm-artical-card2{
+    position: relative;
+    width: 480px;
+    height: 320px;
+    background-image: url(/public/Textures/member-card-noshadow.png);
+    border: 0px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:3px 3px 5px rgba(255, 231, 186, 0.125) ;
+    bottom:0px;
+    transition: 0.5s;
+
+}
+
+.cm-artical-card3{
+    position: relative;
+    width: 480px;
+    height: 320px;
+    background-image: url(/public/Textures/member-card-noshadow.png);
+    border: 0px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:3px 3px 5px rgba(255, 231, 186, 0.125) ;
+    bottom:0px;
+    transition: 0.5s;
+
+}
+
+.cm-artical-card:hover{
+    height: 535px;
+    box-shadow:3px 3px 5px rgb(255, 231, 186) ;
+    bottom:20px;
+    transition: 0.5s;
+    
+}
+
+.cm-artical-card2{
+    min-height: 600px;
+
+    box-shadow:3px 3px 5px rgb(255, 231, 186) ;
+    bottom:20px;
+    transition: 0.5s;
+}
+
+.cm-artical-card3{
+    min-height: 550px;
+
+    box-shadow:3px 3px 5px rgb(255, 231, 186) ;
+    bottom:20px;
+    transition: 0.5s;
+}
+
+.cm-arti-show{
+    opacity: 1;
+    height: auto
+}
+
+.cm-artical-card:hover .cm-arti-show{
+    opacity: 1;
+    transition: 1;
+}
+
+.cm-select-bar-btn>img{
+    width: 160px;
+}
+
+.cm-select-bar-btn>p{
+  font-family: GenSenRoundedTW-M;
+   letter-spacing: 0.2em;
+   font-weight: bold;
+   color: #a88686;
+   border: 1px solid transparent;  
+}
+
+.cm-pbt{
+ font-family: GenSenRoundedTW-M;
+ width: 160px;
+   letter-spacing: 0.2em;
+   font-weight: bold;
+   color: #a88686;
+   border: 1px solid transparent;
+   padding: 8px;
+   border: 1px solid rgb(226, 201, 201);
+   border-radius: 20px;
+   background-image: url(../../public/Buttons/m-record-btn.png);
+   opacity: 1;
+   bottom: 0px;
+   cursor: pointer;
+}
+
+.cm-pbt:hover{
+opacity: .9;
+color: rgb(255, 255, 255);
+background-image: url(/public/Buttons/m-record-btn-a.png);
+transition: .5s;
+}
+
+.cm-artical-innerimg{
+    width: 480px;
+    height: 320px;
+    border: 1px solid transparent;
+    object-fit: cover;
+}
+
+.cm-artical-innerimg >img {
+    width: 480px;
+    height: 320px; 
+    background-position: center;
+    object-fit: cover;
+}
+
+.cm-like-span{
+   font-family: GenSenRoundedTW-M;
+   letter-spacing: 0.2em;
+   font-weight: bold;
+}
+
+.cm-artical{
+     font-family: GenSenRoundedTW-M;
+     /* color: #A88686; */
+
+}
+
+.cm-artical2{
+     font-family: GenSenRoundedTW-M;
+     /* color: #A88686; */
+
+}
+.cm-artical>h3{
+ overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px; 
+}
+
+.cm-artical>span{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+ max-width: 400px; 
+
+}
+
+.cm-member-info{
+    font-family: GenSenRoundedTW-M;
+     width: 30%;
+     position: absolute;
+     top: 250px;
+     left: 0px;
+     opacity: 1 !important;
+}
+
+.cm-member-ava{
+    width: 60px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cm-member-ava>img{
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    background-position: center;
+}
+
+.cm-like-area{
+    height: 50px;
+}
+
+.cm-member-detail>span{
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 12px !important;
+  background-color: rgba(0, 0, 0, 0.485);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+}
+
+.cm-member-detail{
+    opacity: 1 !important;
+}
+
+
+ .cm-member-detail>span{
+  text-shadow: 0px 0px 2px rgb(26, 3, 3);
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 12px !important;
+}
+
+.cm-member-detail{
+    opacity: 1 !important;
+}
+
+.cm-artical-contain-area2{
+    height: 220px !important;
+    border-bottom: 1px solid rgb(164, 164, 164);
+}
+
+.cm-img-area{
+    width: 480px;
+    height: 320px;
+}
+
+.cm-artical-innerimg-add:hover{
+    width: 480px;
+    height: 320px;
+    border: 4px dotted gray;
+    background-color: #a8868667;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.cm-artical-innerimg-add{
+    width: 160px;
+    height: 160px;
+    border: 4px dotted gray;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+
+
+.cn-addp{
+    width: 50px;
+    height: 50px;
+}
+
+.cn-addp:hover{
+    width: 50px;
+    height: 50px;
+    opacity: .8;
+}
+
+.cm-headder-input{
+border: 0px solid transparent;
+border-radius: 20px;
+background-image: url(/public/Textures/wallpaperLight.png);
+background-size:cover;
+color: #A35D73;
+}
+
+.cm-comment-area{
+width: 380px;
+height: 120px;
+}
+
+.cm-summit-area>img{
+    width: 150px;
+    height: 45px;
+}
+
+.cm-card-close{
+    top:250px;
+    right: 450px;
+    display: none;
+}
+
+.cm-back{
+    top: 280px;
+    left:400px;
+}
+
+.cmReply{
+ color: #A88686; 
+ letter-spacing: 0.2em;
+}
+
+.cm-replyray{
+    position: relative !important;
+}
+
+.cm-replay-area{
+    overflow: scroll !important;
+    height: 560px !important;
+    
+    
+}
+.cm-replay-area::-webkit-scrollbar {
+    display: none;
+}
+
+.cm-noshadow{
+    box-shadow: none !important;
+}
+
+.cm-pointer{
+cursor: pointer
+}
+
+.cm-input{
+width: 450px;
+/* height: 150px; */
+
+}
+
+.cm-input-text{
+    border: 1px solid rgba(139, 69, 19, 0);
+    border-radius: 20px;
+     background-image: url(/public/Textures/member-card-noshadow.png);
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     padding-top: 40px;
+     height: 100px;
+     opacity: .8;
+     transition: .5s;
+}
+
+.cm-input-text:focus{
+     border: 2px solid rgba(255, 161, 94, 0);
+     opacity: 1;
+     transition: .5s;
+}
+
+.cm-send {
+    border-radius: 20px !important;
+    margin-top: 5px;
+}
+
+@media (max-width: 576px) {
+.cm-hide{
+    display: none;
+}
+
+.cm-margin{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+
+}

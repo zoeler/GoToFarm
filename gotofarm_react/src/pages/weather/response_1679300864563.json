@@ -1,0 +1,68 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "O-A0003-001",
+    "fields": [
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "obsTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "String"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "lat": "23.497671",
+        "lon": "120.424783",
+        "locationName": "嘉義",
+        "stationId": "467480",
+        "time": {
+          "obsTime": "2020-06-26 23:40:00"
+        },
+        "weatherElement": [
+          {
+            "elementName": "WDSD",
+            "elementValue": "1.10"
+          },
+          {
+            "elementName": "TEMP",
+            "elementValue": "27.90"
+          }
+        ],
+        "parameter": []
+      }
+    ]
+  }
+}

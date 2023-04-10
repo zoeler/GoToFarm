@@ -1,0 +1,265 @@
+.A-awards-circle{
+    width: 70px;
+    height: 70px;
+    background-image: url(../../public/Textures/member-card-noshadow.png);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px #D5BAA6;
+
+}
+
+.A-awards-circle img{
+    width: 45px;
+    height: 45px;
+    filter: invert(100%) sepia(0%) saturate(1784%) hue-rotate(345deg) brightness(60%) contrast(116%);
+
+}
+.A-awards-circle-a{
+    width: 70px;
+    height: 70px;
+    background-image: url(../../public/Textures/wallpaper.png);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px #D5BAA6;
+}
+
+.A-awards-circle-a img{
+    width: 45px;
+    height: 45px;
+    -webkit-filter:  brightness(100%) contrast(100%) grayscale(0%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(60%) sepia(0%);
+    filter:  brightness(100%) contrast(100%) grayscale(0%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(60%) sepia(0%);
+    mix-blend-mode: darken;
+}
+
+
+.A-hovertext {
+    position: relative;
+  }
+  
+.A-hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-image: url(../../public/Textures/wallpaper.png);
+    color: rgb(116, 84, 84);
+
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+.A-hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.A-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.A-myLevel {
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 100px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.A-level-bar{
+    background-color: rgb(237, 237, 237);
+    height: 10px;
+    border-radius: 20px;
+    position: relative;
+
+}
+.A-level{
+    width: 100%;
+    height: 10px;
+    background-color:  #eac645;
+    color: #eac645;
+    border-radius: 20px;
+
+}
+
+.A-level-text{
+    position: absolute;
+    color: #eac645;
+    margin-top: 20px;
+    text-align: center;
+}
+.A-level-group{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    top:-6px;
+}
+.A-level-circle-1{
+position: absolute;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+}
+.A-level-circle-1::before{
+    position: absolute;
+    content: '';
+    font-size: 8px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../public/Icons/New.svg);
+    background-size: contain;
+    top:-65px
+}
+.A-level-circle-1::after{
+    position: absolute;
+    content: '小農新手';
+    font-size: 8px;
+    width: 25px;
+    height: 25px;
+    top:-40px;
+    color: #c89c69;
+}
+.A-wrap-text {
+    word-wrap: break-word;
+    /* 達到指定字數後換行的效果 */
+    width: 180px;
+    /* 設定段落的寬度 */
+}
+
+
+.A-level-circle-2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    }
+    .A-level-circle-2::before{
+        position: absolute;
+        content: '';
+        font-size: 8px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../../public/Icons/Primary.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top:-70px
+    }
+    .A-level-circle-2::after{
+        position: absolute;
+        content: '熱忱小農';
+        font-size: 8px;
+        width: 25px;
+        height: 25px;
+        top:-40px;
+        color: #c89c69;
+    }
+
+
+    .A-level-circle-3{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        }
+        .A-level-circle-3::before{
+            position: absolute;
+            content: '';
+            font-size: 8px;
+            width: 25px;
+            height: 25px;
+            background-image: url(../../public/Icons/Medium.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top:-65px
+        }
+        .A-level-circle-3::after{
+            position: absolute;
+            content: '農園高手';
+            font-size: 8px;
+            width: 25px;
+            height: 25px;
+            top:-40px;
+            color: #c89c69;
+        }
+
+
+
+        
+    .A-level-circle-4{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        }
+        .A-level-circle-4::before{
+            position: absolute;
+            content: '';
+            font-size: 8px;
+            width: 25px;
+            height: 25px;
+            background-image: url(../../public/Icons/Highest.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top:-65px
+        }
+        .A-level-circle-4::after{
+            position: absolute;
+            content: '超級小農';
+            font-size: 8px;
+            width: 25px;
+            height: 25px;
+            top:-40px;
+            color: #c89c69;
+            word-wrap: break-word;
+        }
+
+
+.A-underline {
+    width: 100%;
+    height: 3px;
+    background: rgba(253, 244, 220, 1);
+    border-radius: 10px;
+}
+.A-New {
+    width: 400px;
+    height: 250px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media(max-width:540px) {
+    .A-myLevel {
+        height: 170px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .A-title{
+        margin-top: 30px;
+    }
+    .A-Blur {
+        margin-top: -800px;
+      }
+    .A-New {
+        margin-top: 250px;
+        margin-left: 0px;
+    }
+    .A-New {
+        width: 300px;
+    }
+
+}

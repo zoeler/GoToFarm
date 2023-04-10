@@ -1,0 +1,155 @@
+/* html,
+body
+{
+  position: relative;
+} */
+
+#root {
+  padding: 0px;
+  margin: 0px;
+}
+
+.memeber-body {
+  background-image: url(../../public/Images/login-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin-top: 0px;
+  padding: 0;
+  height: px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.swiper {
+  width: 820px !important;
+  height: 900px;
+  border: 0px;
+  border-radius: 20px;
+  padding-top: 200px;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.login-left {
+  height: 660px;
+}
+
+.login-right {
+  height: 520px;
+}
+
+.log-join-card {
+  text-align: center;
+  font-size: 18px;
+  background-image: url(../../public/Textures/wallpaperLight.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.swiper-wrapper >
+.swiper-slide {
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  background-image: url(../../public/Textures/wallpaperLight.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.msww{
+  margin-top: -10px;
+  height: 950px !important;
+}
+
+.swiper-horizontal .swiper-css-mod{
+margin-top: -100px;
+}
+
+.slide-change {
+  opacity: 1;
+}
+
+/* .slide-change:hover{
+    opacity: 1;
+    transition: 1s;
+} */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-text-sapce {
+  letter-spacing: 0.2em;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+}
+
+.swiper-pagination-bullet {
+  font-family: GenSenRoundedTW-B !important;
+  width: 15px;
+  height: 15px;
+  background: #a88686;
+  color: #a88686 !important;
+}
+
+.sing-in-page {
+  width: 100%;
+  height: 70px;
+}
+
+.swiper-pagination-bullet-active{
+background-color: #a88686 !important;
+aspect-ratio: 1/1;
+}
+
+.ava-ara {
+  width: 600px;
+  height: 300px;
+}
+
+.ava_upload {
+  opacity: 0;
+  height: 250px;
+  top: 20%;
+  left: 15%;
+}
+
+.ava-upload-img {
+  background-size: cover;
+  object-fit: cover;
+  border: 0px;
+  border-radius: 20%;
+  background-position: center;
+}
+.ava-upload-img:hover {
+  background-size: cover;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.ava_output {
+  width: 300px;
+  height: 300px;
+}

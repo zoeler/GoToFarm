@@ -1,0 +1,232 @@
+.MAP-card {
+  width: 800px;
+  height: 500px;
+  margin: 200px auto 100px auto;
+  background-image: url('../../public/Textures/member-card-noshadow.png');
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+  position: relative;
+}
+.MAP-body {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 0 40px 0;
+}
+
+.MAP-img {
+  position: absolute;
+  width: 400px;
+  top: -55px;
+  left: -200px;
+  z-index: 1000;
+}
+.MAP-farmer-wrap {
+  position: absolute;
+  bottom: 7px;
+  right: 47%;
+  cursor: pointer;
+}
+.MAP-farmer {
+  width: 50px;
+  filter: drop-shadow(1px 1px 1px #d5baa6);
+}
+
+.MAP-farmer-wrap:hover .MAP-farmer {
+  transform: rotate(30deg);
+  transition: 0.2s;
+}
+
+.MAP-farmer-wrap:before {
+  content: '小農遊在哪兒？';
+  display: block;
+
+  opacity: 0;
+  width: 140px;
+  color: rgb(67, 104, 58);
+  text-align: center;
+  padding: 10px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+.MAP-farmer-wrap:hover:before {
+  opacity: 1;
+}
+
+.MAP-label {
+  position: absolute;
+  cursor: pointer;
+}
+
+.MAP-label.label-right {
+  right: -100px;
+}
+
+.MAP-label.label-left {
+  left: -100px;
+  bottom: 80px;
+}
+
+.MAP-label.label-right li {
+  font-family: GenSenRoundedTW-M;
+  color: #a88686;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+}
+
+.MAP-label.label-right li:hover {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-hover.png);
+  margin-top: 15px;
+}
+
+.MAP-label.label-right li.active {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-hover.png);
+  margin-top: 15px;
+}
+
+.MAP-label.label-left li {
+  font-family: GenSenRoundedTW-M;
+  color: #a88686;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-l.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+}
+
+.MAP-label.label-left li:hover {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-l-hover.png);
+  margin-top: 15px;
+}
+
+.MAP-label.label-left li.active {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-l-hover.png);
+  margin-top: 15px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background-color: #fffdf6;
+}
+
+.leaflet-popup-content-wrapper button {
+  background-image: url('../../public/Textures/SwitchButton.png');
+  background-size: cover;
+  padding: 5px;
+  border-radius: 5px;
+  color: #2c5c58;
+}
+
+.leaflet-popup-content-wrapper button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+}
+
+@media screen and (max-width: 768px) {
+  .MAP-card {
+    width: 300px;
+    margin: 50px auto 0 auto;
+  }
+  .MAP-body {
+    width: 90%;
+    height: 90%;
+    padding: 0 0 30px 0;
+  }
+
+  .MAP-farmer-wrap {
+    position: absolute;
+    bottom: 8px;
+    right: 43%;
+    cursor: pointer;
+  }
+
+  .MAP-farmer {
+    width: 40px;
+    filter: drop-shadow(1px 1px 1px #d5baa6);
+  }
+
+  .MAP-farmer-wrap:hover .MAP-farmer {
+    transform: rotate(30deg);
+    transition: 0.2s;
+  }
+  .MAP-label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .MAP-label.label-right {
+    left: 10%;
+  }
+
+  .MAP-label.label-right li {
+    font-family: GenSenRoundedTW-M;
+    color: #a88686;
+    list-style-type: none;
+    width: 127px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(../../public/Buttons/m-card-label.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15px;
+  }
+
+  .MAP-label.label-right li:hover {
+    font-family: GenSenRoundedTW-M;
+    color: #2c5c58;
+    list-style-type: none;
+    width: 127px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(../../public/Buttons/m-card-label-hover.png);
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,27 @@
+.L-c-test {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.L-c-test img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.L-c-test2 {
+  width: 33.3333%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+.L-c-test2 img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

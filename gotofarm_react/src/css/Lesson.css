@@ -1,0 +1,593 @@
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('../../public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('../../public/Fonts/GenSenRounded-M.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-R;
+  src: url('../../public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('../../public/Fonts/GenSenRounded-L.otf');
+}
+
+.font-R {
+  font-family: 'GenSenRoundedTW-R';
+}
+
+.font-B {
+  font-family: 'GenSenRoundedTW-B';
+}
+
+.font-M {
+  font-family: 'GenSenRoundedTW-M';
+}
+
+.font-L {
+  font-family: 'GenSenRoundedTW-L';
+}
+/* 字級大小 */
+.f-13 {
+  font-size: clamp(0.6rem, 1vw, 0.8125rem);
+}
+.f-16 {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+.f-20 {
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+}
+.f-24 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.f-32 {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+}
+
+/* 字體顏色 */
+.f-Brown {
+  color: rgb(116, 84, 84);
+}
+
+.f-LightBrown {
+  color: #a88686;
+}
+
+.f-WineRed {
+  color: #a35d73;
+}
+
+.f-LightGreen {
+  color: rgba(87, 172, 111, 1);
+}
+.f-DarkGreen {
+  color: #37797c;
+}
+.f-Gray {
+  color: #7a7a7a;
+}
+
+.f-Yellow {
+  color: #eac645;
+}
+
+.f-White {
+  color: #fff;
+}
+
+.L-CardStyle {
+  position: relative;
+}
+
+.L-CardStyle2 {
+  position: absolute;
+  top: -50px;
+}
+
+.listcolor {
+  background-color: #fffdf6;
+}
+.L-activitycolor {
+  background: url(/public/Images/background.png);
+  background-size: cover;
+}
+.CommentColor {
+  background-color: #e8d1c0;
+}
+
+.L-useMargin {
+  margin-top: 100px;
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+}
+
+.L-card-shadow {
+  box-shadow: 1px 1px 5px 1px #d5baa6;
+}
+
+.L-title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.L-title::before {
+  content: '';
+  width: 112px;
+  height: 10px;
+  position: absolute;
+  background: url(/public/Icons/sea_figma.svg);
+  bottom: -10%;
+}
+.L-title::after {
+  content: '';
+  position: absolute;
+  width: 175px;
+  height: 120px;
+  left: -100px;
+  top: -25px;
+  background: url(/public/Images/titleRice.png);
+  background-size: 120px;
+  background-repeat: no-repeat;
+  transform: rotate(-12.55deg);
+}
+
+/* 課程首頁navbar */
+.L-categories-style {
+  max-width: 800px;
+}
+
+.L-categories-side-btn {
+  background-image: url(/public/Textures/buttonYmain.png);
+  background-size: contain;
+  color: #a88686;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  /* height: 30px; */
+  line-height: 15px;
+  /* margin-right: 10px; */
+}
+
+.L-categories-side-btn:hover {
+  background-image: url(/public/Textures/buttonYsub.png);
+  background-size: contain;
+  color: #2c5c58;
+}
+
+.L-categories-btn button {
+  background-image: url(/public/Textures/buttonYmain.png);
+  background-size: contain;
+  color: #a88686;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  /* height: 30px; */
+  line-height: 15px;
+  /* margin-right: 10px; */
+}
+
+.L-categories-btn button:hover {
+  background-image: url(/public/Textures/buttonYsub.png);
+  background-size: contain;
+  color: #2c5c58;
+}
+
+.L-categories-btn a {
+  background-image: url(/public/Textures/buttonYmain.png);
+  background-size: contain;
+  color: #a88686;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  /* height: 30px; */
+  line-height: 15px;
+  /* margin-right: 10px; */
+}
+
+.L-categories-btn a:hover {
+  background-image: url(/public/Textures/buttonYsub.png);
+  background-size: contain;
+  color: #2c5c58;
+}
+
+/* 課程分類插圖 */
+.L-categories-title-bg {
+  background: url(/public/Images/L-categories-title-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.L-categories-img {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.L-categories-img::before {
+  content: '';
+  width: 175px;
+  height: 100px;
+  position: absolute;
+  background: url(/public/Images/titleRice.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -60px;
+  left: -80px;
+}
+
+.L-categories-img::after {
+  content: '';
+  width: 175px;
+  height: 120px;
+  position: absolute;
+  background: url(/public/Images/lessonRabbit1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -40px;
+  left: 715px;
+}
+
+.L-category-nav {
+  height: fit-content;
+}
+
+/* 課程詳細日期&評分排序 */
+.L-categories-btn button {
+  background-image: url(/public/Textures/buttonYmain.png);
+  background-size: cover;
+  color: #a88686;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  width: 120px;
+  /* height: 30px; */
+  line-height: 15px;
+  /* margin-right: 10px; */
+}
+
+.L-categories-btn button:hover {
+  background-image: url(/public/Textures/buttonYsub.png);
+  background-size: cover;
+  color: #2c5c58;
+}
+
+.L-title-img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0 20px 0 0;
+  object-fit: cover;
+}
+
+.L-img-wrap {
+  width: 28%;
+  aspect-ratio: 1/1;
+  margin: 0 20px 0 0;
+  /* padding-top: 20px; */
+}
+
+.L-img-wrap img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-img {
+  width: 100%;
+  object-fit: cover;
+  /* border: 1px solid red; */
+}
+
+.L-card-bg {
+  background: url(/public/Textures/wallpaperLight.png);
+  background-size: contain;
+}
+
+/* 4月份圖片 */
+.L-box {
+  width: 90px;
+  height: 80px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  background: url(/public/Textures/buttonYmain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.L-border-ridus {
+  border-radius: 20px;
+}
+/* 4月份圖片 */
+.L-ImgStyle {
+  position: relative;
+}
+
+.L-ImgStyle2 {
+  position: absolute;
+  top: -17.5%;
+}
+
+/* Grid */
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'header header  content'
+    'sidebar sidebar content '
+    'footer footer content ';
+  background-color: #fff;
+}
+.Grid-box {
+  border-radius: 20px;
+  padding: 16px;
+  /* font-size: 200%; */
+  /* border:1px solid red; */
+}
+
+/* 加入收藏按鈕 */
+.L-addbookmark {
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  background-image: url('/public/Textures/wallpaperR.png');
+  background-size: cover;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 5px #fff;
+}
+.L-addbookmark span::before {
+  content: '加入收藏';
+}
+.L-addbookmark span::before {
+  -webkit-text-stroke: 0px;
+  position: absolute;
+  color: #a88686;
+}
+.L-addbookmark:hover {
+  background-image: url('/public/Textures/wallpaper.png');
+  background-size: cover;
+}
+.L-addbookmark:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+  opacity: 1;
+}
+
+/* 加入我要報名按鈕 */
+.L-add {
+  border: none;
+  border-radius: 0.375rem;
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url('/public/Textures/wallpaper.png');
+  background-size: cover;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 5px #fff;
+}
+.L-add span::before {
+  content: '我要報名';
+}
+.L-add span::before {
+  -webkit-text-stroke: 0px;
+  position: absolute;
+  color: #a88686;
+}
+.L-add:hover {
+  background-image: url('/public/Textures/wallpaperR.png');
+  background-size: cover;
+}
+.L-add:active {
+  transform: translate3d(0px, 6px, 0);
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.L-wavetop {
+  position: absolute;
+  top: 0;
+}
+.L-wavebottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* 課程&老師標籤 */
+.L-lesson-more-tag {
+  width: 100%;
+}
+
+.L-lesson-more-tag div {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.2s;
+}
+
+.L-lesson-more-tag div:hover {
+  transform: translateY(-10px);
+}
+
+.L-lesson-more-tag div:first-child {
+  background: url(/public/Textures/buttonYsub.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #927272;
+}
+
+.L-lesson-more-tag div:last-child {
+  background: url(/public/Textures/ButtonGdark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #927272;
+}
+
+.L-lesson-more-info {
+  width: 50%;
+}
+.L-lesson-more-info h1 {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: #57ac6f;
+  margin-bottom: 30px;
+}
+.L-lesson-more-info h3 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: #eac645;
+  margin-bottom: 30px;
+}
+.L-lesson-more-info p {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.2em;
+  text-align: justify;
+  color: #a88686;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 4; 指定行數 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* 手機 */
+@media screen and (max-width: 576px) {
+  .L-useMargin {
+    margin-top: 0;
+  }
+
+  .L-title::after {
+    display: none;
+  }
+  .L-section2-img {
+    display: none;
+  }
+  .box {
+    width: 300px;
+  }
+  .L-ImgStyle {
+    position: sticky;
+  }
+  .L-ImgStyle2 {
+    position: sticky;
+  }
+
+  .L-categories-img {
+    position: unset;
+  }
+
+  .L-categories-img::before {
+    display: none;
+  }
+
+  .L-categories-img::after {
+    display: none;
+  }
+
+  .test img {
+    object-position: none;
+  }
+
+  /* 詳細介紹grid */
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    grid-template-areas:
+      'header header header'
+      'content content content'
+      'sidebar sidebar sidebar';
+    background-color: #fff;
+    color: #444;
+  }
+
+  /* 收藏/報名 */
+  .L-add {
+    width: 180px;
+    height: 50px;
+  }
+  .L-addbookmark {
+    width: 180px;
+    height: 50px;
+  }
+
+  /* 評論區 */
+  .CommentColor {
+    background-color: transparent;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .L-lesson-more-info {
+    width: 100%;
+  }
+  .L-lesson-more-info h1 {
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: #57ac6f;
+    margin-bottom: 20px;
+  }
+  .L-lesson-more-info h3 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: #eac645;
+    margin-bottom: 20px;
+  }
+  .L-lesson-more-info p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+    color: #a88686;
+  }
+}

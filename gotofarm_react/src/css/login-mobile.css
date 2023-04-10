@@ -1,0 +1,72 @@
+.log-join-card4 {
+  display: none !important;
+}
+
+@media (max-width: 576px) {
+  .login-hiddend-card {
+    display: none;
+  }
+
+  .memeber-body {
+    width: 375px !important;
+    height: 667px !important;
+  }
+
+  .log-join-card4 {
+    display: block !important;
+    height: 250px;
+    z-index: 20000px;
+  }
+
+  .log-tab-bg {
+    height: 40px;
+    /* background-image: url(../../public/Textures/SwitchButton.png); */
+    background-image: url(../../public/Textures/SwitchButton.png);
+    background-size: cover;
+    border: 0px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: GenSenRoundedTW-B;
+    font-weight: bolder;
+    text-align: center;
+    color: #a88686;
+    font-size: 16px;
+  }
+
+  .log-tab-bg > .active {
+    height: 50px;
+    background-color: transparent !important;
+    background-image: url(../../public/Textures/buttonYsub.png) !important;
+    background-size: cover;
+    border: 0px !important;
+    border-radius: 20px 20px 0px 0px !important;
+    color: #5c4747 !important;
+    font-size: 18px;
+    transition: 0.8s;
+  }
+
+  .tab-content > .active {
+    background-image: none !important;
+  }
+
+  .login-mobile-card {
+    height: 440px;
+  }
+
+  .login-mobile-card2 {
+    height: 480px;
+  }
+
+  .swiper-slide {
+    height: 500px !important;
+  }
+
+  .m-session,
+  .login-main-full {
+    height: 667px !important;
+    width: 375px !important;
+  }
+
+  .login-auto-input2 > img{
+  display: none;
+}
+}

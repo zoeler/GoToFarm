@@ -1,0 +1,1192 @@
+/* from  main */
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('../../public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('../../public/Fonts/GenSenRounded-M.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-R;
+  src: url('../../public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('../../public/Fonts/GenSenRounded-L.otf');
+}
+
+/* 字體粗細 */
+
+.font-B {
+  font-family: GenSenRoundedTW-B;
+}
+
+.font-M {
+  font-family: GenSenRoundedTW-M;
+}
+
+.font-R {
+  font-family: GenSenRoundedTW-R;
+}
+
+.font-L {
+  font-family: GenSenRoundedTW-L;
+}
+.f-B {
+  font-family: GenSenRoundedTW-B;
+}
+
+.f-M {
+  font-family: GenSenRoundedTW-M;
+}
+
+.f-R {
+  font-family: GenSenRoundedTW-R;
+}
+
+.f-L {
+  font-family: GenSenRoundedTW-L;
+}
+.f-13 {
+  font-size: clamp(0.6rem, 1vw, 0.8125rem);
+}
+
+.f-16 {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+.f-18 {
+  font-size: clamp(1rem, 2vw, 1.125);
+}
+
+.f-20 {
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+}
+
+.f-24 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.f-32 {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+}
+
+.f-Brown {
+  color: rgb(116, 84, 84);
+}
+.f-Khaki {
+  color: #c89c69;
+}
+
+.f-LightGreen {
+  color: rgba(87, 172, 111, 1);
+}
+
+.f-DarkGreen {
+  color: #37797c;
+}
+
+.f-Gray {
+  color: #7a7a7a;
+}
+.f-Yellow {
+  color: #eac645;
+}
+
+.sp-1 {
+  letter-spacing: 2px;
+}
+
+.sp-2 {
+  letter-spacing: 4px;
+}
+
+.sp-3 {
+  letter-spacing: 6px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-20-tl-tr {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.shadow-1 {
+  box-shadow: 1px 1px 3px 1px #d5baa6;
+}
+
+.backgound-w {
+  background-color: white;
+}
+
+.backgound-y {
+  background-color: rgba(252, 245, 221, 1);
+}
+
+/* 拔除原生樣式 */
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border: 0;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: hidden;
+  letter-spacing: 5px;
+  background: transparent;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+}
+
+textarea:focus {
+  outline: none !important;
+}
+
+.ds-none {
+  display: none;
+}
+
+/* from  main */
+
+/* for shopping cart */
+
+/* body {
+  background-color: #fffdf6;
+} */
+
+/* p {
+    margin: 0;
+} */
+.C-Cartcontainer {
+  margin-top: 40px;
+}
+.C-LoginAlert {
+  width: 30%;
+  height: 40%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.C-IconCart {
+  /* margin-top: 10px; */
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.C-IconCart::before {
+  content: attr(data-count);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(87, 172, 111, 1);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: clamp(0.6rem, 1vw, 0.8125rem);
+  top: -5px;
+  right: 0px;
+  color: aliceblue;
+}
+
+.C-title-1-5 {
+  width: 75px;
+  text-align: center;
+}
+
+.C-title-2 {
+  width: 72px;
+  text-align: center;
+}
+
+.C-title-3 {
+  width: 110px;
+  text-align: center;
+}
+
+.C-title-4 {
+  width: 100px;
+  text-align: center;
+}
+
+.C-title-5 {
+  width: 13px;
+}
+
+.C-productimg {
+  width: 80px;
+  height: 54px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.C-productimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.C-payitem-img{
+  width: 60px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.C-payitem-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.C-date img {
+  width: 25px;
+}
+
+.C-Cart-p {
+  position: relative;
+  margin-top: 100px;
+}
+
+.C-notfound {
+  width: 70px;
+  height: 70px;
+}
+.C-gotoshop {
+  cursor: pointer;
+  width: 210px;
+  transform: rotate(0deg);
+}
+.C-gotoshop:hover {
+  transform: rotate(10deg);
+  transition: 0.1s ease-in;
+}
+
+.C-Cart-p::before {
+  content: '小農商品(' attr(data-count) ')';
+  background: url('../../public/Textures/cart-cate-p.svg');
+  width: 229px;
+  height: 65px;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  letter-spacing: 0.2em;
+  color: rgb(136, 78, 78);
+}
+
+.C-Cart-l {
+  position: relative;
+  margin-top: 100px;
+}
+
+.C-Cart-l::before {
+  content: '小農課程(' attr(data-count) ')';
+  background: url('../../public/Textures/cart-cate-l.svg');
+  width: 229px;
+  height: 65px;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  letter-spacing: 0.2em;
+  color: #37797c;
+}
+
+.C-Item-l2 {
+  margin-left: auto;
+  gap: 30px;
+}
+
+.C-title-group {
+  margin-left: auto;
+  gap: 27px;
+}
+
+.C-underline {
+  margin-top: 15px;
+  width: 100%;
+  height: 3px;
+  background: rgba(253, 244, 220, 1);
+  border-radius: 10px;
+}
+
+.less {
+  background: url('../../public/Icons/less.svg');
+  border: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.more {
+  background: url('../../public/Icons/more.svg');
+  border: 0;
+  width: 32px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.C-counternum {
+  background-color: rgba(255, 253, 246, 1);
+  width: clamp(40px, 2.5vw, 54px);
+  height: 30px;
+  color: rgb(116, 84, 84);
+  text-align: center;
+}
+
+.C-price {
+  width: 100px;
+  text-align: center;
+}
+
+.C-delete {
+  width: 13px;
+  cursor: pointer;
+}
+.C-delete:hover {
+  filter: hue-rotate(90deg);
+}
+
+.C-Summary {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  z-index: 101;
+}
+.C-coupon {
+  cursor: pointer;
+}
+.C-coupon:hover {
+  filter: hue-rotate(335deg);
+}
+.C-coupon img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.C-cartbutton {
+  width: 215px;
+  height: 60px;
+  border-radius: 13px;
+  background: url('../../public/Buttons/buttonYmain.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  box-shadow: 1px 1px 3px 1px #d5baa6;
+}
+.C-cartbutton:hover {
+  filter: brightness(108%);
+}
+.C-cartbutton img {
+  width: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.C-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.C-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: url('../../public/Buttons/circle.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  color: #7a7a7a;
+}
+
+.C-circle:active {
+  width: 65px;
+  height: 65px;
+  background: url('../../public/Buttons/circle-a.svg');
+  transition: ease;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: rgb(116, 84, 84);
+}
+
+.C-active {
+  width: 65px;
+  height: 65px;
+  background: url('../../public/Buttons/circle-a.svg');
+  transition: ease;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: rgb(116, 84, 84);
+}
+
+.C-dash {
+  background: url('../../public/Buttons/dash.svg');
+  width: 40.5px;
+  height: 1.5px;
+}
+
+/* pay */
+.C-paytitle {
+  color: rgb(116, 84, 84);
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  letter-spacing: 2px;
+}
+.C-input-ReadOnly {
+  width: 100%;
+  height: 40px;
+  background-color: #fffdf6;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  caret-color: rgba(168, 134, 134, 1);
+}
+.C-input-ReadOnly input {
+  width: 100%;
+  color: rgb(176, 150, 83);
+  font-family: GenSenRoundedTW-M;
+}
+.C-input-ReadOnly::before {
+  position: absolute;
+  border-radius: 3px;
+  background: rgba(234, 198, 69, 1);
+  height: 4px;
+  content: '';
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.C-input {
+  width: 100%;
+  height: 40px;
+  background-color: #fffdf6;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  caret-color: rgba(168, 134, 134, 1);
+}
+
+.C-input input {
+  width: 100%;
+  color: rgb(141, 94, 94);
+  font-family: GenSenRoundedTW-M;
+}
+
+.C-input::before {
+  position: absolute;
+  border-radius: 3px;
+  background: rgba(234, 198, 69, 1);
+  height: 4px;
+  content: '';
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.C-input:focus-within::before {
+  position: absolute;
+  border-radius: 3px;
+  background: rgba(163, 93, 115, 1);
+  height: 4px;
+  content: '';
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.C-collapse {
+  border: 0;
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  background: url('../../public/Buttons/collapse.svg');
+  background-repeat: no-repeat;
+}
+
+.C-payment {
+  position: relative;
+}
+
+.C-payment::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  right: 0;
+  border-radius: 10px;
+  background-color: rgba(253, 244, 220, 1);
+}
+
+.C-address {
+  position: relative;
+}
+
+.C-address::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  right: 0;
+  border-radius: 10px;
+  background-color: rgba(253, 244, 220, 1);
+}
+
+.C-payitem-img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.C-visa {
+  position: relative;
+  height: auto;
+  box-shadow: 1px 1px 20px 5px #f0e5a9;
+  border-radius: 20px;
+  border: 0;
+}
+.C-visanum {
+  /* width: clamp(100px, 85%, 120px); */
+  height: 10px;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  bottom: 25%;
+  left: 10%;
+  margin-bottom: 10px;
+}
+
+.C-visadot {
+  width: 120px;
+  /* width: clamp(100px, 85%, 120px); */
+  height: 10px;
+  background: url('../../public/Buttons/visadot.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.C-visanum-4 {
+  color: #fffdf6;
+  font-size: 13px;
+  font-family: GenSenRoundedTW-B;
+  letter-spacing: 5px;
+  margin-left: 5%;
+}
+
+.C-visadate {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #fffdf6;
+  font-size: 13px;
+  font-family: GenSenRoundedTW-B;
+  letter-spacing: 5px;
+}
+
+.C-visa img {
+  z-index: 0;
+}
+.C-hr {
+  width: 100%;
+  height: 3px;
+  background-color: #fdf4dc;
+  transform: rotate(90deg);
+}
+
+.C-remark-input {
+  border: 3px solid rgba(234, 198, 69, 1);
+}
+
+.C-agreement {
+  word-wrap: break-word; /* 達到指定字數後換行的效果 */
+  width: 300px; /* 設定段落的寬度 */
+  font-size: 10px;
+}
+.C-agreeCheck {
+  width: 23px;
+  height: 24px;
+  background: url(../../public/Icons/checkbox.svg);
+  background-repeat: no-repeat;
+}
+.C-agreeCheck:checked {
+  width: 23px;
+  height: 24px;
+  background: url(../../public/Icons/checkboxChecked.svg);
+  background-repeat: no-repeat;
+}
+
+.C-Agree input {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.C-agreement a {
+  color: #eac645 !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.C-submit {
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.C-remark textarea {
+  color: rgb(141, 94, 94);
+}
+/* order */
+.C-Order img {
+  width: 80px;
+}
+
+.C-o-pay {
+  border: 3px solid rgba(168, 134, 134, 1);
+  border-radius: 10px;
+}
+
+/* rwd */
+@media (max-width: 1300px) {
+  .C-Item-l2 {
+    gap: 15px;
+  }
+
+  .C-title-group {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .C-Item-l2 {
+    gap: 10px;
+  }
+
+  .C-title-group {
+    gap: 10px;
+  }
+
+  .C-price-1 {
+    display: none;
+  }
+
+  .C-title-2 {
+    display: none;
+  }
+
+  .C-payment::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(253, 244, 220, 1);
+  }
+
+  .C-address::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(253, 244, 220, 1);
+  }
+}
+.C-oneClick{
+  width: 300px;
+  height: 30px;
+  background-color: #37797c;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .C-visanum {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    bottom: 25%;
+    left: 10%;
+    margin-bottom: 10px;
+  }
+
+  .C-visadot {
+    width: 100px;
+    background: url('../../public/Buttons/visadot.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .C-visadate {
+    font-size: 6px;
+  }
+  .C-title {
+    display: none;
+  }
+
+  .C-Item-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .C-Item-l1 {
+    width: 100%;
+    display: flex;
+  }
+
+  .C-Item-l2 {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .C-delete {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .C-delete img {
+    width: 15px;
+  }
+
+  .C-price {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .C-price-1 {
+    display: none;
+  }
+
+  .C-Item-2 {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .C-counter {
+    padding-top: 20px;
+  }
+
+  .C-step {
+    flex-direction: column;
+  }
+
+  .C-payment::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(253, 244, 220, 1);
+  }
+
+  .C-address::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: rgba(253, 244, 220, 1);
+  }
+  .C-submit {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .C-productimg {
+    width: 50px;
+    height: 54px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .C-payment span {
+    font-size: 8px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+
+  .C-payitem-img {
+    width: 45px;
+    margin-right: 5px;
+  }
+
+  .C-submit {
+    justify-content: center;
+  }
+}
+/* For DeleteConfirm */
+.C-DeleteAlert {
+  width: 360px;
+  height: 250px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.C-Deletebutton {
+  width: 120px;
+  height: 40px;
+  border-radius: 13px;
+  background: url('../../public/Buttons/wallpaper.png');
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 10px;
+  line-height: 0;
+}
+.C-fail {
+  word-wrap: break-word;
+  width: 200px;
+}
+
+.C-DeletebuttonGray {
+  width: 80px;
+  height: 40px;
+  border-radius: 13px;
+  background: url('../../public/Buttons/wallpaper.png');
+  filter: grayscale(80%);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 10px;
+  line-height: 0;
+}
+
+/* For Coupon */
+
+.C-Blur {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #876c568b;
+  position: fixed;
+  z-index: 1000;
+  overflow-y: initial !important;
+}
+.D-Blur {
+  margin-top: -200px;
+  width: 100%;
+  height: 200vh;
+  background-color: #876c568b;
+  position: fixed;
+  z-index: 1000;
+  overflow-y: initial !important;
+}
+.C-Coupon {
+  display: flex;
+  flex-basis: min-content;
+  margin-left: 10;
+  box-shadow: 2px 1px 2px 1px #d7bfab;
+  /* max-width: 420px;
+    min-width: 400px; */
+  height: auto;
+}
+.C-CouponBody {
+  width: 500px;
+  margin-top: 100px;
+  height: 600px;
+  overflow-y: auto;
+}
+.C-couponimg {
+  width: 100px;
+  height: 120px;
+  -webkit-mask-image: url('/public/Buttons/couponoutline.svg');
+  mask-image: url('/public/Buttons/couponoutline.svg');
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+.C-couponimg img {
+  width: 150%;
+  height: 150%;
+  object-fit: scale-down;
+  object-position: -24px -15px;
+}
+
+.C-coupontitle {
+  font-family: GenSenRoundedTW-M;
+  line-height: 1.5;
+  width: 230px;
+}
+
+.C-couponbutton {
+  width: 110px;
+  height: 40px;
+  border-radius: 13px;
+  background: url('../../public/Buttons/wallpaper.png');
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 10px;
+  line-height: 0;
+}
+
+.C-couponbuttonGray {
+  width: 80px;
+  height: 40px;
+  border-radius: 13px;
+  background: url('../../public/Buttons/wallpaper.png');
+  filter: grayscale(80%);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 10px;
+  line-height: 0;
+}
+
+/* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+
+.C-toggle-button-cover {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.C-toggle-button-cover:focus {
+  outline: none;
+}
+
+.C-knobs,
+.C-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.C-button {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.C-button.C-r,
+.C-button.C-r .C-layer {
+  border-radius: 100px;
+}
+
+.C-checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.C-knobs {
+  z-index: 2;
+}
+
+.C-layer {
+  width: 100%;
+  background-color: #e6e6e6;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.C-Payheight {
+  height: 470px;
+}
+
+.C-Linepay {
+  width: 100px;
+}
+
+.C-LineCancel {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+.C-Linepay-2 {
+  width: 150px;
+}
+.C-Linepay-2 img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.C-Linepay img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.C-paywaybtn {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background: url(../../public/Buttons/m-record-btn.png);
+  color: rgb(219, 159, 55);
+}
+
+.C-paywaybtn:hover {
+  filter: brightness(108%);
+}
+.C-paywaybtn-a {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background: url(../../public/Buttons/m-record-btn-a.png);
+  color: rgb(150, 62, 33);
+}
+
+/* Button 1 */
+#button-1 .C-knobs:before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: #d7e0e1;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .C-checkbox:checked + .C-knobs:before {
+  content: '';
+  left: 42px;
+  background-color: #eac645;
+}
+
+#button-1 .C-checkbox:checked ~ .C-layer {
+  background-color: #fff3cd;
+}
+
+#button-1 .C-knobs,
+#button-1 .C-knobs:before,
+#button-1 .C-layer {
+  transition: 0.3s ease all;
+}
+
+@media (max-width: 768px) {
+  .C-button {
+    width: 60px;
+    height: 20px;
+  }
+  #button-1 .C-knobs:before {
+    top: 1px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+  }
+
+  #button-1 .C-checkbox:checked + .C-knobs:before {
+    content: '';
+    left: 39px;
+    background-color: #eac645;
+  }
+  .C-coupontitle {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .C-discount {
+    font-size: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .C-CouponBody {
+    width: 420px;
+  }
+  .C-Cartcontainer {
+    margin-top: 10px;
+  }
+  .C-notfound {
+    display: none;
+  }
+  .C-notext {
+    font-size: 14px;
+    word-wrap: break-word; /* 達到指定字數後換行的效果 */
+    width: 70px; /* 設定段落的寬度 */
+    margin-left: 20px;
+  }
+  .C-coupontitle {
+    font-size: 5px;
+    line-height: 1.1;
+  }
+  .C-discount {
+    font-size: 10px;
+  }
+}

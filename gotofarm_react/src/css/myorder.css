@@ -1,0 +1,627 @@
+.grid-main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'L L L L L R R R'
+    'L L L L L R R R';
+}
+.g-left {
+  grid-area: L;
+}
+.g-right {
+  grid-area: R;
+}
+
+.M-inner-session {
+  /* outline: 5px dotted blue; */
+  height: fit-content;
+}
+.M-session {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+
+.M-back {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(../../public/Buttons/back-01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 3px 1px #d5baa6;
+}
+
+.M-back:hover {
+  filter: brightness(105%);
+}
+
+.M-seemore {
+  width: 33px;
+  height: 8px;
+  background: url(../../public/Buttons/seemore.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.M-seemore:hover {
+  filter: brightness(120%);
+}
+
+.M-left-side {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  /* outline: 1px red solid; */
+}
+
+.M-right-side {
+  height: fit-content;
+  /* outline: 1px red solid; */
+}
+.M-title {
+  width: 100%;
+}
+.M-subtitle {
+  width: 100%;
+  white-space: nowrap;
+  margin-right: 10px;
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  font-family: GenSenRoundedTW-M;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  gap: 20px;
+}
+.M-right-card {
+  height: fit-content;
+  padding: 40px;
+  background-image: url(../../public/Textures/member-card-noshadow.png);
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px 1px #d5baa6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.M-member-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 15px;
+  margin-left: 25px;
+}
+
+.M-member-avacircle {
+  width: 110px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  outline: 10px solid white;
+  overflow: hidden;
+  position: relative;
+}
+.M-member-avacircle img {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+
+.M-select-avatar input[type='file'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.M-member-avacircle:hover .custom-file-upload {
+  /* display: block; */
+  opacity: 1;
+  transition: 0.8s ease;
+}
+.custom-file-upload {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+  top: 45px;
+  left: 13px;
+  width: 78px;
+  height: 30px;
+  background: url('../../public/Textures/buttonYlight.png');
+  padding: 6px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: GenSenRoundedTW-M;
+  color: #7e4c4c;
+}
+
+.M-member-info-detail {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.D-inline > span {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+}
+
+.M-input {
+  width: 160px;
+  height: 40px;
+  background-image: url(../../public/Textures/buttonBrown.png);
+  position: relative;
+  caret-color: rgba(168, 134, 134, 1);
+  border-radius: 20px;
+}
+
+.M-input input {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  color: rgb(141, 94, 94);
+  font-family: GenSenRoundedTW-M;
+  text-align: center;
+}
+
+.M-input input[readonly]:focus {
+  background-image: url(../../public/Textures/buttonBrown.png);
+}
+
+.M-inputEditable input {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  color: rgb(141, 94, 94);
+  background-image: url(../../public/Textures/buttonYmain.png);
+  text-align: center;
+}
+.M-inputEditable input:focus {
+  background-image: url(../../public/Textures/buttonGmain.png);
+}
+
+.M-input-2 {
+  width: 300px;
+  height: 40px;
+  background-image: url(../../public/Textures/buttonBrown.png);
+  position: relative;
+  caret-color: rgba(168, 134, 134, 1);
+  border-radius: 20px;
+}
+
+.M-input-2 input {
+  width: 300px;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+  color: rgb(141, 94, 94);
+  font-family: GenSenRoundedTW-M;
+  text-align: center;
+}
+
+.M-input-2 input[readonly]:focus {
+  background-image: url(../../public/Textures/buttonBrown.png);
+}
+
+.M-inputEditable-2 input {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  color: rgb(141, 94, 94);
+  background-image: url(../../public/Textures/buttonYmain.png);
+  text-align: center;
+}
+.M-inputEditable-2 input:focus {
+  background-image: url(../../public/Textures/buttonGmain.png);
+}
+
+.M-card-container {
+  width: 95%;
+  height: 95%;
+  /* background-color: rgba(127, 255, 212, 0.295); */
+}
+
+.M-record {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.M-member-btn {
+  background-image: url(../../public/Textures/buttonYmain.png);
+  width: 95%;
+  height: 110px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.M-member-btn2 {
+  background-image: url(../../public/Buttons/m-record-btn.png);
+  background-size: cover;
+  width: 90%;
+  height: 130px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.M-class-week {
+  width: 100% !important;
+  margin-right: 0px !important;
+}
+.M-btn-p {
+  color: #7e4c4c;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  font-family: GenSenRoundedTW-B;
+}
+.M-circle {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1/1;
+  /* border: 3px solid gray; */
+  /* border-radius: 50%; */
+}
+.M-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.M-class-week {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../public/Textures/wallpaper.png);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+.M-id > li {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: 25px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: GenSenRoundedTW-M;
+}
+
+.M-EditC {
+  width: 96px;
+  height: 27px;
+  background: url(../../public/Buttons/save.svg);
+}
+.M-Editbutton {
+  width: 35px;
+  height: 28px;
+  background-color: transparent;
+  border: 0px;
+  background-image: url(../../public/Buttons/edit-Btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.M-hr {
+  width: 100%;
+  height: 3px;
+  background: #e8d1c0;
+  border-radius: 10px;
+}
+
+.M-adward-box {
+  /* height: 300px; */
+  margin-top: 20px;
+  /* background-color: #432f9a4e; */
+}
+
+.M-band-circle {
+  width: 150px;
+  height: 150px;
+  background-image: url(../../public/Textures/buttonYsub.png);
+  border-radius: 50%;
+}
+.M-band-square {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid black; */
+}
+
+.M-adward-brands {
+  border-radius: 20px;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 35px;
+  text-align: center;
+  line-height: 1cm;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+  letter-spacing: 0.2em;
+  background-image: url(../../public/Textures/buttonYsub.png);
+}
+
+.M-card-label > li {
+  font-family: GenSenRoundedTW-M;
+  font-size: 10px;
+  color: #a88686;
+  list-style-type: none;
+  width: 80px;
+  height: 30px;
+  padding-top: 6px;
+  padding-left: 12px;
+  background-image: url(../../public/Buttons/m-card-label.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  z-index: -1;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.M-card-label > li:hover {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 80px;
+  height: 30px;
+  background-image: url(../../public/Buttons/m-card-label-hover.png);
+  margin-top: 15px;
+}
+
+/* forOrder */
+.M-Item:hover {
+  border-radius: 5px;
+  background-color: #f9f3ed;
+}
+.M-underline {
+  width: 100%;
+  height: 3px;
+  background: rgba(253, 244, 220, 1);
+  border-radius: 10px;
+}
+
+.M-Icon-band {
+  width: 34px;
+  height: 38px;
+  background: url(../../public/Icons/m-band.png);
+  background-repeat: no-repeat;
+}
+.M-Icon-reput {
+  width: 23px;
+  height: 20px;
+}
+.M-Icon-reput img {
+  object-fit: contain;
+}
+
+.C-text-limit {
+  overflow: hidden; /* 隱藏超出範圍的文字 */
+  text-overflow: ellipsis; /* 將超出範圍的文字替換為省略號 */
+  white-space: nowrap; /* 避免文字自動換行 */
+  max-width: 150px; /* 限制顯示的寬度 */
+}
+
+.C-wrap-text {
+  word-wrap: break-word; /* 達到指定字數後換行的效果 */
+  width: 70px; /* 設定段落的寬度 */
+}
+.C-O-coupon {
+  box-shadow: 3px 2px 3px 1px #eedbcd;
+}
+.C-O-price {
+  width: 70px;
+}
+.C-coupon-wrap-text {
+  word-wrap: break-word; /* 達到指定字數後換行的效果 */
+  width: 230px; /* 設定段落的寬度 */
+  padding: 10px;
+  padding-top: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.C-O-couponimg {
+  height: 120px;
+  width: 120px;
+  -webkit-mask-image: url('/public/Buttons/couponoutline.svg');
+  mask-image: url('/public/Buttons/couponoutline.svg');
+  /* -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+}
+.C-O-couponimg img {
+  width: 150%;
+  height: 150%;
+  object-fit: scale-down;
+  object-position: -24px -15px;
+}
+
+.C-O-coupon-quota {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.C-Order-2 {
+  padding-left: 6%;
+}
+.C-Order-t {
+  position: relative;
+}
+.C-Order-t::before {
+  content: '我的訂單(' attr(data-count) ')';
+  background: url('../../public/Textures/cart-cate-p.svg');
+  width: 229px;
+  height: 65px;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  left: 60px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  letter-spacing: 0.2em;
+  color: rgb(136, 78, 78);
+}
+
+.M-C-back-Contain {
+  width: 551px;
+}
+
+.C-Order-c {
+  position: relative;
+}
+.C-Order-c::before {
+  content: '我的優惠卷(' attr(data-count) ')';
+  background: url('../../public/Textures/cart-cate-p.svg');
+  width: 229px;
+  height: 65px;
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  left: 80px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+  letter-spacing: 0.2em;
+  color: rgb(136, 78, 78);
+}
+.C-O-pay {
+  width: 72px;
+}
+
+.C-O-send {
+  width: 72px;
+}
+
+/* for pageination */
+.C-pagination {
+  cursor: pointer;
+}
+.C-P-active {
+  filter: hue-rotate(340deg) brightness(95%) saturate(80%);
+}
+.C-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: grayscale(80%);
+}
+
+.M-hovertext {
+  position: relative;
+}
+
+.M-hovertext:before {
+  font-family: GenSenRoundedTW-M;
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-image: url(../../public/Textures/wallpaper.png);
+  color: rgb(116, 84, 84);
+
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.M-hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+.C-Pagenation {
+  width: 100%;
+  justify-content: end;
+}
+@media (max-width: 540px) {
+  .M-back-margin {
+    margin-top: 50px;
+  }
+
+  .C-Pagenation {
+    width: 100%;
+    justify-content: center;
+  }
+  .C-O-price {
+    width: 60px;
+  }
+  .C-Order-2 {
+    padding-left: 0%;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'R R R R R R R R'
+      'R R R R R R R R'
+      'L L L L L L L L';
+  }
+  .M-left-side {
+    padding: 15px;
+  }
+  .M-member-info-detail {
+    display: none;
+  }
+  .M-adward-box {
+    display: none !important;
+  }
+  .M-right-card {
+    width: 100%;
+    padding: 20px;
+  }
+  .M-hr {
+    display: none;
+  }
+  .M-title {
+    display: none;
+  }
+  .M-member-btn {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .M-member-btn2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .M-card-label {
+    display: none;
+  }
+
+  .C-O-couponimg {
+    display: none;
+  }
+}

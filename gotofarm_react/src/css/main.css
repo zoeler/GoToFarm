@@ -1,0 +1,1673 @@
+/* 整體背景 */
+body {
+  background-color: #fffdf6;
+}
+
+:focus-visible {
+  outline: 0;
+}
+
+/* 拔除input樣式 */
+input[type='number']::-webkit-outer-spin-button,
+myAuth input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border: 0;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('../../public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('../../public/Fonts/GenSenRounded-M.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-R;
+  src: url('../../public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('../../public/Fonts/GenSenRounded-L.otf');
+}
+
+/* 字體粗細 */
+
+.font-B {
+  font-family: GenSenRoundedTW-B;
+}
+
+.font-M {
+  font-family: GenSenRoundedTW-M;
+}
+
+.font-R {
+  font-family: GenSenRoundedTW-R;
+}
+
+.font-L {
+  font-family: GenSenRoundedTW-L;
+}
+
+/* 字級大小 */
+.f-13 {
+  font-size: clamp(0.6rem, 1vw, 0.8125rem);
+}
+
+.f-16 {
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+}
+
+.f-20 {
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
+}
+
+.f-24 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.f-32 {
+  font-size: clamp(1.8rem, 3vw, 2rem);
+}
+
+/* 字體顏色 */
+.f-Brown {
+  color: rgb(116, 84, 84);
+}
+
+.f-LightGreen {
+  color: rgba(87, 172, 111, 1);
+}
+
+.f-DarkGreen {
+  color: #37797c;
+}
+
+.f-Gray {
+  color: #7a7a7a;
+}
+
+.f-Yellow {
+  color: #eac645;
+}
+
+/* 文字間距 letter-spacing*/
+.sp-1 {
+  letter-spacing: 2px;
+}
+
+.sp-2 {
+  letter-spacing: 4px;
+}
+
+.sp-3 {
+  letter-spacing: 6px;
+}
+
+.nav-nobg {
+  background-color: transparent;
+}
+
+.nav-bg {
+  /* background-color: transparent; */
+  background-color: #fffdf6;
+}
+
+.navbar-title {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  max-width: 1920px;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  height: 180px;
+}
+
+/* == header == */
+
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  height: 180px;
+}
+
+.icon-member {
+  background: url(../../public/Icons/icon-member.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 13px;
+}
+
+.icon-heart {
+  background: url(../../public/Icons/🦆\ icon\ _heart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  margin-right: 2px;
+}
+
+.icon-heart:hover {
+  background: url(../../public/Icons/🦆\ icon\ -heart-hover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 15px;
+}
+
+.icon-logout {
+  background: url(../../public/Icons/icon-logout.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 13px;
+}
+
+@media (max-width: 768px) {
+  .navbar-hamburger {
+    z-index: 1000;
+    background-color: #fffdf6;
+    /* border:1px solid #D5BAA6; */
+    border-radius: 10px;
+    width: 130px;
+    height: 220px;
+    margin: 5px;
+  }
+
+  .nav-mb-logoimg {
+    z-index: 1;
+    background-color: #fffdf6;
+    border-radius: 50%;
+    width: 97.5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /* background-image: url(../../public/Textures/buttonYmain.png); */
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 20;
+  }
+
+  .icons-index {
+    position: absolute;
+    left: 70%;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #57ac6f;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .icons {
+    background-size: cover;
+    background: url(../../public/Icons/icon-cart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .memeber-status {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    align-self: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    width: 30px;
+    height: 120px;
+    border-radius: 0 0px 50px 50px;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    transform: translateY(-130px);
+    transition: 0.5s;
+    z-index: 20;
+    background-color: #fffdf6;
+    opacity: 1;
+  }
+
+  #memberList>a {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .memeber-status-login {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+    width: 30px;
+    height: 89px;
+    border-radius: 0 0px 50px 50px;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    transform: translateY(-100px);
+    transition: 0.5s;
+    z-index: 20;
+    opacity: 1;
+    background-color: #fffdf6;
+  }
+
+  .memeber-login {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .memberList {
+    transition: 0.5s;
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+
+  .memberList-login {
+    transition: 0.2s;
+    transform: translateY(0px);
+  }
+
+  .memberList:target {
+    transition: 0.2s;
+  }
+
+  .memeber-status:target {
+    transform: translateY(135px);
+    transition: 0.2s;
+  }
+
+  .button-member {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    border: 4px solid #fff;
+    background-color: #c4c4c4;
+    z-index: 22;
+    overflow: hidden;
+  }
+
+  .memeber-active-bg {
+    /* position: relative; */
+    /* background-color: #fffdf6; */
+    /* border: 1px solid #000; */
+    width: 50px;
+    height: 120px;
+    margin-left: 0px;
+    margin-top: -5px;
+    z-index: 21;
+    overflow: hidden;
+  }
+
+  .button-member>img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hamburger-buttom-mb {
+    position: relative;
+    left: 5%;
+    padding-top: 20px;
+    margin-bottom: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger-buttom-mb {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-hamburger {
+    z-index: 1000;
+    /* background-color: #fffdf6; */
+    /* border:1px solid #D5BAA6; */
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .nav-title-button {
+    margin-left: -135px;
+  }
+
+  .button-cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /* background-image: url(../../public/Textures/buttonYmain.png); */
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 200;
+  }
+
+  .icons-index {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #57ac6f;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    left: 70%;
+    top: 0;
+  }
+
+  .icons {
+    background-size: cover;
+    background: url(../../public/Icons/icon-cart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .memeber-status {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding-left: 0;
+    /* padding-top: 2px; */
+    width: 135px;
+    height: 30px;
+    border-radius: 0 50px 50px 0px;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    z-index: 10;
+    transform: translateX(-100px);
+    transition: 0.5s;
+    opacity: 1;
+    background-color: #fffdf6;
+  }
+
+  .buttom-logout {
+    z-index: 100;
+  }
+
+  .memeber-status-login {
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    padding-left: 0;
+    padding-top: 2px;
+    width: 89px;
+    height: 30px;
+    border-radius: 0 50px 50px 0px;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    transform: translateX(-50px);
+    transform-origin: 0 50%;
+    opacity: 1;
+    transition: 0.5s;
+    background-color: #fffdf6;
+  }
+
+  .memberList>a {
+    z-index: 20;
+  }
+
+  .memeber-login {
+    position: relative;
+    margin-left: 5px;
+    z-index: 1000;
+  }
+
+  .memberList {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+
+  .memberList:target {
+    transition: 0.2s;
+  }
+
+  .memeber-status:target {
+    transition: 0.2s;
+    transform: translateX(0px);
+  }
+
+  .button-member {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #c4c4c4;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    z-index: 20;
+    overflow: hidden;
+  }
+
+  .button-member>img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .memeber-active-bg {
+    margin-left: 1px;
+    position: relative;
+    width: 170px;
+    height: 50px;
+    margin-top: -40px;
+    z-index: 15;
+    border-radius: 50% 0% 0% 50%;
+    overflow: hidden;
+  }
+
+  .nav-mb-logoimg {
+    display: none;
+  }
+}
+
+/* === */
+
+/* === Navbars === */
+
+.navbar-toggler-icon {
+  background-image: url(../../public/Icons/expand.svg);
+}
+
+.navbar-title>ul>li {
+  /* position: absolute; */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_li {
+  height: 34px;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu_li>a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2a6a4b;
+}
+
+.menu_li>a>span {
+  position: relative;
+}
+
+.menu_li>a>span>svg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -2px;
+}
+
+.menu_li>a>div {
+  display: inline;
+  align-items: center;
+}
+
+.menu_li>a>div>img {
+  width: 34px;
+  height: 34px;
+}
+
+.nav-logo {
+  position: relative;
+}
+
+.nav-logoimg {
+  position: relative;
+  margin-top: -75px;
+  padding: 10px;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  background-color: #fffdf6;
+  z-index: 1;
+}
+
+.nav-sm-logoimg {
+  margin-top: -20px;
+  width: 214px;
+  height: 71px;
+  /* background-color: #fffdf6; */
+}
+
+@media (min-width: 768px),
+print {
+  .navbar-logo {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu_li {
+    padding: 20px;
+  }
+
+  .nav-mb-logimg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-mb-logimg {
+    margin: auto;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .menu_li {
+    padding: 0;
+    margin-top: 10px;
+  }
+}
+
+/* === button專區 === */
+.btn-area {
+  width: 100%;
+  position: relative;
+  margin: 90px auto 0;
+  padding-bottom: 60px;
+}
+
+/* 網頁 */
+
+@media (min-width: 768px) {
+
+  /* === */
+  .buttonGS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 198px;
+    height: 70px;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: 12px;
+  }
+
+  .buttonGS:hover {
+    transform: translate3d(8px, 8px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonGS:active {
+    transform: translate3d(8px, 12px, 0px);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonGS::before {
+    content: '';
+    display: block;
+    width: 198px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonGSLine.svg);
+    background-size: auto;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .buttonGS::after {
+    content: '';
+    display: block;
+    width: 198px;
+    height: 70px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background: url(../../public/Buttons/ButtonGS.svg);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  .buttonGS:hover::before {
+    transform: translate3d(4px, 4px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonGS:hover::after {
+    transform: translate3d(-4px, -4px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonG {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 294px;
+    height: 83px;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: 12px;
+  }
+
+  .buttonG:hover {
+    transform: translate3d(12px, 12px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonG:active {
+    transform: translate3d(12px, 18px, 0px);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonG::before {
+    content: '';
+    display: block;
+    width: 294px;
+    height: 83px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonGLine.svg);
+    background-size: auto;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .buttonG::after {
+    content: '';
+    display: block;
+    width: 294px;
+    height: 83px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: url(../../public/Buttons/ButtonG.svg);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  .buttonG:hover::before {
+    transform: translate3d(6px, 6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonG:hover::after {
+    transform: translate3d(-6px, -6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonYS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 167px;
+    height: 69px;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: 12px;
+  }
+
+  .buttonYS:hover {
+    transform: translate3d(12px, 12px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonYS:active {
+    transform: translate3d(12px, 18px, 0px);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonYS::before {
+    content: '';
+    display: block;
+    width: 167px;
+    height: 69px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonYSLine.svg);
+    background-size: auto;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .buttonYS::after {
+    content: '';
+    display: block;
+    width: 167px;
+    height: 69px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: url(../../public/Buttons/ButtonYS.svg);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  .buttonYS:hover::before {
+    transform: translate3d(6px, 6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonYS:hover::after {
+    transform: translate3d(-6px, -6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  /* ----- */
+
+  .buttonY {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 359px;
+    height: 94px;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: 12px;
+  }
+
+  .buttonY:hover {
+    transform: translate3d(12px, 12px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonY:active {
+    transform: translate3d(12px, 18px, 0px);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonY::before {
+    content: '';
+    display: block;
+    width: 359px;
+    height: 94px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonYLine.svg);
+    background-size: auto;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .buttonY::after {
+    content: '';
+    display: block;
+    width: 359px;
+    height: 94px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: url(../../public/Buttons/ButtonY.svg);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  .buttonY:hover::before {
+    transform: translate3d(6px, 6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonY:hover::after {
+    transform: translate3d(-6px, -6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  /* ----- */
+
+  .buttonYL {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 293px;
+    height: 84px;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: 12px;
+  }
+
+  .buttonYL:hover {
+    transform: translate3d(12px, 12px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonYL:active {
+    transform: translate3d(12px, 18px, 0px);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonYL::before {
+    content: '';
+    display: block;
+    width: 293px;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonYLLine.svg);
+    background-size: auto;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .buttonYL::after {
+    content: '';
+    display: block;
+    width: 293px;
+    height: 84px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: url(../../public/Buttons/ButtonYL.svg);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  .buttonYL:hover::before {
+    transform: translate3d(6px, 6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  .buttonYL:hover::after {
+    transform: translate3d(-6px, -6px, 0);
+    transition: 0.2s ease;
+    opacity: 1;
+  }
+
+  /* --- */
+
+  .buttonfavorite {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    background-size: auto;
+    transition: 0.2s;
+  }
+
+  .buttonfavorite:hover {
+    /* transform: translate3d(0px, 6px, 0); */
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonfavorite:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttoncart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    background-size: auto;
+    background: url(../../public/Buttons/ButtonCart.png);
+    transition: 0.2s;
+  }
+
+  .buttoncart:hover {
+    background: url(../../public/Buttons/ButtonCartHover.png);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttoncart:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonLesson {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    background-size: auto;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonLesson.png);
+  }
+
+  .buttonLesson:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonR {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonR.svg);
+  }
+
+  .buttonR:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonS.svg);
+  }
+
+  .buttonS:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonP {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonP.svg);
+  }
+
+  .buttonP:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+}
+
+/* 手機 */
+
+@media (max-width: 768px) {
+  .buttonGS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 198px;
+    height: 70px;
+    z-index: 100;
+    padding-top: 12px;
+  }
+
+  .buttonGS::before {
+    content: '';
+    display: block;
+    width: 198px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonGSLine.svg);
+    background-size: auto;
+    z-index: 10;
+  }
+
+  .buttonGS::after {
+    content: '';
+    display: block;
+    width: 198px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../../public/Buttons/ButtonGS.svg);
+    z-index: -1;
+  }
+
+  .buttonGS:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+
+  .buttonG {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 294px;
+    height: 83px;
+    z-index: 100;
+    padding-top: 12px;
+  }
+
+  .buttonG::before {
+    content: '';
+    display: block;
+    width: 294px;
+    height: 83px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonGLine.svg);
+    background-size: auto;
+    z-index: 10;
+  }
+
+  .buttonG::after {
+    content: '';
+    display: block;
+    width: 294px;
+    height: 83px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../../public/Buttons/ButtonG.svg);
+    z-index: -1;
+  }
+
+  .buttonG:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonYS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 167px;
+    height: 69px;
+    z-index: 100;
+    padding-top: 12px;
+  }
+
+  .buttonYS::before {
+    content: '';
+    display: block;
+    width: 167px;
+    height: 69px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonYSLine.svg);
+    background-size: auto;
+    z-index: 10;
+  }
+
+  .buttonYS::after {
+    content: '';
+    display: block;
+    width: 167px;
+    height: 69px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../../public/Buttons/ButtonYS.svg);
+    z-index: -1;
+  }
+
+  .buttonYS:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* --- */
+  .buttonY {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 144px;
+    height: 43px;
+    z-index: 100;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .buttonY::before {
+    content: '';
+    display: block;
+    width: 144px;
+    height: 43px;
+    position: absolute;
+    background: url(../../public/Buttons/ButtonMobileLine.svg);
+    background-size: auto;
+    z-index: 10;
+  }
+
+  .buttonY::after {
+    content: '';
+    display: block;
+    width: 144px;
+    height: 43px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../../public/Buttons/ButtonMobile.svg);
+    z-index: -1;
+  }
+
+  .buttonY:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* ----- */
+
+  .buttonYL {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 293px;
+    height: 84px;
+    z-index: 100;
+    padding-top: 12px;
+  }
+
+  .buttonYL::before {
+    content: '';
+    display: block;
+    width: 293px;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../public/Buttons/ButtonYLLine.svg);
+    background-size: auto;
+    z-index: 10;
+  }
+
+  .buttonYL::after {
+    content: '';
+    display: block;
+    width: 293px;
+    height: 84px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../../public/Buttons/ButtonYL.svg);
+    z-index: -1;
+  }
+
+  /* --- */
+
+  .buttonfavorite {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    background-size: auto;
+    transition: 0.2s;
+  }
+
+  .buttonfavorite:hover {
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttonfavorite:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttoncart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    background-size: auto;
+    background: url(../../public/Buttons/ButtonCart.png);
+    transition: 0.2s;
+  }
+
+  .buttoncart:hover {
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .buttoncart:active {
+    background: url(../../public/Buttons/ButtonCartHover.png);
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+
+  .buttonLesson {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    background-size: auto;
+    background: url(../../public/Buttons/ButtonLesson.png);
+    padding-top: 12px;
+  }
+
+  /* === */
+  .buttonR {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 266px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonR.svg);
+  }
+
+  .buttonR:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonS {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonS.svg);
+    padding-top: 12px;
+  }
+
+  .buttonS:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  /* === */
+  .buttonP {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 253px;
+    height: 60px;
+    z-index: 100;
+    transition: 0.2s;
+    background: url(../../public/Buttons/ButtonP.svg);
+    padding-top: 12px;
+  }
+
+  .buttonP:active {
+    transform: translate3d(0px, 6px, 0);
+    transition: 0.2s;
+    opacity: 1;
+  }
+}
+
+/* footer */
+@media (min-width: 769px) {
+  #Footer {
+    height: 631px;
+    background: #fff;
+    position: relative;
+    margin-top: 70px;
+  }
+
+  #Footer::before {
+    content: "";
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    margin-top: -70px;
+    background-image: url(../../public/Textures/session-before-white.svg);
+    background-size: cover;
+  }
+
+  .footer-card {
+    margin: auto;
+    width: 290px;
+    height: 410px;
+    background: #fff;
+  }
+
+  .footer-logoimg {
+    width: 220px;
+    border-radius: 50%;
+    background: #fffdf6;
+    margin-top: 100px;
+  }
+
+  .button-footer {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-image: url(../../public/Textures/buttonYlight.png);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 20;
+  }
+
+  .footer-img {
+    margin-top: -200px;
+    margin-bottom: 100px;
+  }
+
+  .footer-cart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-ig {
+    width: 41px;
+    height: 41px;
+  }
+
+  .footer-fb {
+    width: 23px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Footer {
+    height: 378px;
+    background: #fff;
+  }
+
+  .footer-card {
+    margin: auto;
+    width: 290px;
+    height: 410px;
+    background: #fff;
+  }
+
+  .footer-logoimg {
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    background: #fffdf6;
+    margin-top: 55px;
+  }
+
+  .button-footer {
+    /* margin: auto; */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../public/Textures/buttonYlight.png);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding-left: 7px;
+    padding-right: 7px;
+    z-index: 20;
+  }
+
+  .footer-cart {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-ig {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-fb {
+    width: 13px;
+    height: 23px;
+  }
+
+  .footer-img {
+    display: none;
+    margin-top: -200px;
+    margin-bottom: 100px;
+  }
+}
+
+/* amimation img */
+
+.windmill {
+  margin: 20px;
+  position: relative;
+  width: 325px;
+  height: 257px;
+}
+
+.windmill-body {
+  position: absolute;
+  width: 166px;
+  height: 123px;
+  background-image: url(../../public/svg/windmill.png);
+  background-size: cover;
+  top: 55px;
+}
+
+.windmill-fans-left {
+  position: absolute;
+  width: 135px;
+  height: 123px;
+  background-image: url(../../public/svg/windmillFan.png);
+  background-size: cover;
+  left: 15px;
+  -moz-animation: windmillloop 15s linear infinite;
+  animation: windmillloop 15s linear infinite;
+}
+
+.windmill-fans-right {
+  position: absolute;
+  width: 135px;
+  height: 123px;
+  background-image: url(../../public/svg/windmillFan.png);
+  background-size: cover;
+  left: 15px;
+  -moz-animation: windmillloop2 15s linear infinite;
+  animation: windmillloop2 15s linear infinite;
+}
+
+@keyframes windmillloop {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes windmillloop2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

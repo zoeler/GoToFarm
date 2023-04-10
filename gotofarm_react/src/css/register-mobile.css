@@ -1,0 +1,92 @@
+@media (max-width: 576px) {
+
+.ms{
+    height: 155vh !important;
+}
+
+.swiper-ios > .swiper-wrapper> .swiper-slide{
+  height: 150vh !important
+
+}
+
+.msms{
+width: 300px !important;
+height: 1000px !important;
+}
+
+.ms > .swiper{
+    width: 350px !important;
+    height: auto !important;
+    margin: 0px ;
+}
+
+.msms > .login-span{
+    margin-top: 0px !important;
+}
+
+.mr > .sign-up-hint{
+    width: 300px !important;
+}
+
+.join-manin-head{
+    font-size: 36px !important;
+}
+
+.re-input{
+    flex-direction: column !important;
+    margin-top: 0px !important;
+    
+    
+    
+}
+
+.msa > .login-input-area{
+    width: 150px !important;
+    height: 100px !important;
+    margin: 0px !important;
+    justify-content: center !important;
+}
+
+.re-card{
+margin: 0px;
+}
+
+.input-email-height{
+    width: 310px !important;
+}
+
+.m-s-match{
+margin-top: 30px;
+}
+
+ .swiper-button-next{
+    margin: 0px !important;
+    justify-content: start !important;
+ }
+
+
+
+.mr{
+    width: 100% !important;
+    height: 100px !important;
+}
+
+.mhb{
+    visibility: hidden;
+}
+
+.ava-ara{
+    width: auto !important;
+}
+
+
+
+.ssb
+.select-box{
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+
+/* 結尾 */
+}

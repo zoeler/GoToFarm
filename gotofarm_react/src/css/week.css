@@ -1,0 +1,84 @@
+
+.W-Container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.W-week {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../public/Textures/wallpaper.png);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.W-day {
+  width: 100px;
+  height: 50px;
+}
+
+.W-class{
+  height: 150px;
+}
+.W-hasclass {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 80px;
+  background: url('../../public/Textures/buttonYmain.png');
+}
+
+.W-Pr {
+  width: 23px;
+  height: 23px;
+  background: url(../../public/Buttons/PreWeek.svg);
+}
+.W-Next {
+  width: 23px;
+  height: 23px;
+  background: url(../../public/Buttons/PreWeek.svg);
+  transform: rotate(180deg);
+}
+
+.W-week table {
+  border-collapse: collapse;
+}
+.W-week td
+{
+  border-left: 3px solid #EAC645;
+  border-right: 3px solid #EAC645;
+  border-top: none;
+  border-bottom: none;
+}
+.W-week th{
+  border-left: 3px solid #EAC645;
+  border-right: 3px solid #EAC645;
+  border-top: none;
+  border-bottom: none;
+}
+
+@media (max-width: 540px) {
+  .W-week{
+    width: 297px;
+    height: 290px;
+    padding: 10px;
+  }
+  .W-day{
+    font-size: 6px;
+    width: 15px!important;
+    word-wrap: break-word;
+  }
+  .W-day th{
+    width: 100%;
+  }
+  .W-hasclass{
+      font-size: 6px;
+    }
+  .W-class{
+    width: 35px;
+  }
+}

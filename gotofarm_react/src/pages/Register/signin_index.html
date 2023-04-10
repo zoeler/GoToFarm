@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入小農遊大家庭</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/login-swiper.css">
+    <link rel="stylesheet" href="../../css/logon-main.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/login-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+    <!-- 引用JQ -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <!-- 引入年月日選擇器 -->
+    <script type="text/javascript" src="../../js/birthday.js"></script>
+
+</head>
+
+<body class="memeber-body">
+    <!-- HTML -->
+
+    <!-- Swiper -->
+    <form name="sing_in_data">
+        <div class="log-join-card swiper animate__rubberBand mt-5">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- First-Card -->
+                    <div class="swiper-slide slide-change d-flex justify-content-center align-items-start mt-5">
+                        <div class="">
+                            <div class="d-block justify-content-center h-100 mt-5">
+                                <span class="join-manin-head fs-2 mb-5">
+                                    加入成為小農吧!
+                                </span>
+                                <!-- 填入資料表單 -->
+                                <div class="login-input-contain">
+                                    <div class="d-flex">
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text">姓名*</div>
+                                            <input type="text" maxlength="5" min="2" class="sing-up-input">
+                                            <div class="sign-up-hint">請輸入您的真實姓名</div>
+
+                                        </div>
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text">暱稱*</div>
+                                            <input type="text" minlength="1" maxlength="8" class="sing-up-input">
+                                            <div class="sign-up-hint">雖然可以自由發揮，但最多只能輸入8個字元喔！</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text">Email*</div>
+                                            <input type="email" class="sing-up-input input-email"
+                                                placeholder="填入的Email會作為小農遊帳號使用喔！">
+                                            <div class="sign-up-hint">文字提示欄位</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="login-input-area text-start">
+                                                <div class="login-text">密碼*</div>
+                                                <input id="demo_input" minlength="8" maxlength="10" type="password"
+                                                    class="sing-up-input demo_input">
+                                                <div class="sign-up-hint">請輸入至少8~12位數字＋英文密碼</div>
+                                                <div class="login-text mt-0 d-flex align-items-center me-4"
+                                                    onclick="hideShowPsw()">
+                                                    <img class="me-2 show_password_img" id="demo_img"
+                                                        src="../../../public/Icons/invisiable_password.png">
+                                                    顯示密碼
+                                                </div>
+
+                                            </div>
+                                            <div class="login-input-area text-start">
+                                                <div class="login-text">確認密碼*</div>
+                                                <input type="password" minlength="8" maxlength="10"
+                                                    class="sing-up-input">
+                                                <div class="sign-up-hint">文字提示欄位</div>
+                                            </div>
+                                        </div>
+                                        <div class="ms-5 d-flex justify-content-center mt-0">
+                                            <div class="btn-area w-25 d-flex justify-content-center vb"
+                                                style="opacity: 0;">
+                                                <a href="#/" class="buttonG swiper-button-next login-btfont">下一步</a>
+                                            </div>
+                                            <div class=" btn-area d-flex justify-content-center">
+                                                <div
+                                                    class="buttonG swiper-button-next login-btfont">下一步(1/3)</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Scend-Card -->
+                    <div class="swiper-slide slide-change d-flex justify-content-center  align-items-start mt-5">
+                        <div class="w-75">
+                            <div class="d-block justify-content-center h-75 mt-2">
+                                <span class="join-manin-head fs-2">
+                                    加入成為小農吧!
+                                </span>
+                                <!-- 填入資料表單 -->
+                                <!-- <div class="mt-4 mb-0 login-text text-start text-secondary">請提供您的正確地址作為送貨地址</div> -->
+                                <div class="login-input-contain">
+
+                                    <span class="login-text fs-6">
+                                        輸入居住地資料會成為預設的小農Ｇo物送貨地址喔！
+                                    </span>
+                                    <div class="d-flex flex-grow-1">
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text me-4 w-50">居住城市*</div>
+                                            <select id="city5" class="sing-up-input" placeholder="請選擇縣市"></select>
+                                            <div class="sign-up-hint">下拉選單會幫助您選擇居住城市及地區喔！</div>
+
+                                        </div>
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text w-50">居住地區*</div>
+                                            <select id="dist5" class="sing-up-input" placeholder="請選擇鄉鎮區"></select>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="login-text text-start">詳細地址*</div>
+                                        <div class="login-input-area text-start d-flex w-100">
+                                            <input data-exclude="澎湖縣,929,綠島鄉"
+                                                class="me-3 w-25 js-demeter-tw-zipcode-selector sing-up-input input-email"
+                                                data-city="#city5" data-dist="#dist5" placeholder="郵遞區號" />
+                                            <input type="text" maxlength="20" class="sing-up-input input-email"
+                                                placeholder="點此輸入完整地址">
+                                        </div>
+                                        <div class="sign-up-hint">下拉選單會幫助您選擇居住城市及地區喔！</div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <div class="login-input-area text-start">
+                                                <div class="login-text">聯絡電話*</div>
+                                                <input class="sing-up-input" type="tel" id="phone" name="phone"
+                                                    minlength="10" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                    required>
+                                                <div class="sign-up-hint">請輸入正確的電話格式</div>
+                                                <div class="login-text mt-3 d-flex align-items-center me-4">
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="login-input-area text-start">
+                                                <div class="login-text">簽收人姓名</div>
+                                                <input type="text" placeholder="預設與會員姓名相同" class="sing-up-input">
+                                                <div class="sign-up-hint">可以輸入簽收人姓名資料</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-100 d-flex justify-content-center mt-0">
+                                            <div class="me-5 btn-area w-100 d-flex justify-content-stat">
+                                                <a href="#/" class="buttonYL login-btfont swiper-button-prev">上一步</a>
+                                            </div>
+                                            <div class=" btn-area ms-5 d-flex justify-content-center">
+                                                <a href="#/"
+                                                    class=" ms-3 buttonG swiper-button-next login-btfont">下一步(2/3)</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third-Card -->
+                    <div class="swiper-slide slide-change d-flex justify-content-center  align-items-start mt-5">
+                        <div class="w-75">
+                            <div class="h-75 w-100 mt-2  d-flex flex-column justify-content-center">
+                                <span class="join-manin-head fs-2">
+                                    加油！下一步就要完成了
+                                </span>
+
+                                <span class="login-text fs-6">
+                                    上傳大頭貼及會員生日登記，完成註冊即享有小農Go優惠
+                                </span>
+
+                                <div class="w-100 mt-5 d-flex justify-content-center align-items-center">
+                                    <div
+                                        class="m-id-input-bg accordion-collapse m-member-avacircle flex-column justify-content-center align-content-center">
+                                        <input type="file" class="ava_upload position-absolute bg-white w-50"
+                                            style="opacity: 0; height: 250px; top: 20%; left: 15%;" accept="image/*"
+                                            onchange="ava_loadFile(event)" name="member_img">
+                                        <img id="ava_output"
+                                            class="singn-in-img login-text d-flex justify-content-center align-items-center"
+                                            style="background-size: cover; object-fit: cover; border: 0px; border-radius: 50%; background-position: center;"
+                                            src="../../../public/Icons/ava-upload.png" alt="點此上傳大頭貼">
+                                        </img>
+                                    </div>
+                                </div>
+                                <!-- 填入資料表單 -->
+                                <!-- <div class="mt-4 mb-0 login-text text-start text-secondary">請提供您的正確地址作為送貨地址</div> -->
+                                <div class="login-input-contain d-block justify-content-center w-100 mt-2">
+
+
+                                    <div class="d-flex">
+                                        <div class="login-input-area text-start">
+                                            <div class="login-text">會員生日*</div>
+                                            <div class="login-text d-flex align-items-center me-5">
+                                                <div
+                                                    class="singn-in-hide-day d-flex justify-content-center align-items-center me-2">
+                                                    <select id="selYear" class="sing-in-select"
+                                                        name="members_year"></select>年</div>
+                                                <div
+                                                    class="singn-in-hide-day d-flex justify-content-center align-items-center me-2">
+                                                    <select id="selMonth" class="sing-in-select"
+                                                        name="members_month"></select>月</div>
+                                                <div
+                                                    class="singn-in-hide-day d-flex justify-content-center align-items-center text-start me-2">
+                                                    <select id="selDay" class="sing-in-select"
+                                                        name="members_day"></select>日</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="w-100 d-flex justify-content-center mt-5">
+                                        <div class="me-5 btn-area w-100 d-flex justify-content-stat">
+                                            <a href="#/" class="buttonYL login-btfont swiper-button-prev">上一步</a>
+                                        </div>
+                                        <div class=" btn-area ms-5 d-flex justify-content-center">
+                                            <a href="#/"
+                                                class=" ms-3 buttonG swiper-button-next login-btfont">完成！發送認證信</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="swiper-slide slide-change">備用空白卡片</div> -->
+
+
+                        <!-- <div class="swiper-slide slide-change">備用空白卡片</div> -->
+
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination sing-in-page fs-4"></div>
+            </div>
+        </div>
+    </form>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+
+        });
+    </script>
+
+
+    <!-- 引入郵遞區號 -->
+    <script src="https://demeter.5fpro.com/tw/zipcode-selector.js"></script>
+
+
+    <!-- 密碼顯示/切換功能 -->
+    <script>
+        const inputPass = document.getElementById('demo_input');
+        const demoImg = document.getElementById("demo_img")
+        function hideShowPsw() {
+            if (inputPass.getAttribute("type") === "password") {
+                inputPass.setAttribute("type", "text");
+                demo_img.src = "../../../public/Icons/product.svg";
+            } else {
+                inputPass.setAttribute("type", "password");
+                demo_img.src = "../../../public/Icons/invisiable_password.png";
+            }
+        }
+    </script>
+
+    <!-- 載入照片並預覽功能 -->
+    <script>
+        var ava_loadFile = function (event) {
+            var ava_output = document.getElementById('ava_output');
+            ava_output.src = URL.createObjectURL(event.target.files[0]);
+            ava_output.onload = function () {
+                URL.revokeObjectURL(ava_output.src) // free memory
+            }
+        };
+    </script>
+
+    <script type="text/javascript">
+        var selYear = window.document.getElementById("selYear");
+        var selMonth = window.document.getElementById("selMonth");
+        var selDay = window.document.getElementById("selDay");
+        new DateSelector(selYear, selMonth, selDay, 1991, 2, 28);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.C-Dropdown ul{
+  position: relative;
+  width: 145px;
+  background: white;
+  /* box-shadow: 1px 1px 2px 1px #D5BAA6; */
+  border-radius: 5px;
+  text-align: center;
+  border:  #f0d983 solid 4px;
+}
+
+.C-Dropdown-open ul{
+  height: 200px;
+  overflow-y: auto;
+
+  position: relative;
+  width: 145px;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  border: #f0d983 solid 4px;
+}
+.C-Dropdown-open li{
+  padding: 10px 12px 10px 5px;
+  text-align: center;
+  color: rgb(141, 94, 94);
+}
+.C-Dropdown li {
+  padding: 10px 12px 10px 5px;
+  text-align: center;
+  color: rgb(141, 94, 94);
+}
+.C-Dropdown-open li:hover{
+  background: #f0dfaf;
+}
+.C-Dropdown-open li:active {
+  background: #e1c782;
+}
+.list-unstyled {
+  list-style: none;
+}
+.ds-none {
+  display: none;
+}
+
+.C-dropdown-selected{
+  position: relative;
+}
+
+.C-dropdown-selected img{
+  width: 15px;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+}
+
+.C-Imgactive{
+  width: 15px;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  transform: rotate(180deg)
+}
+

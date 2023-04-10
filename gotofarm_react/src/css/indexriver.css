@@ -1,0 +1,301 @@
+/* 評論標題 */
+.IR-commnet-title h1 {
+  font-size: 48px;
+  color: #eac645;
+  letter-spacing: 0.2rem;
+}
+.IR-commnet-title span {
+  color: #57ac6f;
+}
+
+/* 整個評論區 */
+.IR-commnet {
+  width: 100%;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  background-image: url(./../../public/Images/commentFarm.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+}
+
+/* 河道範圍 */
+.IR-commnet-river {
+  position: absolute;
+  /* background-color: #96d8e06a; */
+  width: 50000px;
+  height: 60%;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  animation: riverIR 100s linear 0s infinite alternate both;
+  animation-play-state: running;
+}
+
+.IR-commnet-river:hover {
+  animation-play-state: paused;
+}
+
+/* 評論本體 */
+.IR-commnet-info {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 1px #d5baa6;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  transition: 0.2s;
+  /* top: 20px; */
+  padding: 30px 30px 20px 30px;
+  opacity: 0.5;
+  transform: scale(0.5) rotate(20deg);
+}
+.IR-commnet-info:hover {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.IR-commnet-info:hover p:nth-child(4),
+p:nth-child(5) {
+  display: block;
+}
+
+.IR-commnet-info:hover p:nth-child(5) {
+  display: block;
+}
+
+.IR-commnet-avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  box-shadow: 0px 1px 10px 1px #d5baa6;
+  margin: 0 auto 15px auto;
+}
+.IR-commnet-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.IR-commnet-info p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.IR-commnet-info p:nth-child(2) {
+  color: #2c5c58;
+  font-size: 18px;
+}
+
+.IR-commnet-info p:nth-child(4) {
+  font-size: 14x;
+  text-align: justify;
+  display: none;
+}
+
+.IR-commnet-info p:nth-child(5) {
+  color: #a88686;
+  font-size: 14x;
+  text-align: right;
+  display: none;
+}
+
+.IR-commnet-star {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.IR-commnet-link-wrap {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+}
+
+.IR-commnet-link {
+  width: 150px;
+  height: 150px;
+  background-image: url(./../../public/Images/commentLink.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.IR-commnet-link div {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 30px;
+  left: 39px;
+}
+.IR-commnet-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 評論本體未展開 */
+.IR-commnet-info-s {
+  transition: 0.2s;
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 300px;
+  position: absolute;
+}
+.IR-commnet-info-s div {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  box-shadow: 0px 1px 10px 1px #d5baa6;
+}
+.IR-commnet-info-s img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.IR-commnet-info-s span {
+  width: 120px;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0px 10px 30px 1px #d5baa6;
+  border-radius: 30px;
+  margin-left: -50px;
+  z-index: 0;
+  text-align: right;
+  line-height: 70px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+/* 風車 */
+.IR-windmill {
+  position: absolute;
+  bottom: 100px;
+  left: 3%;
+  width: 270px;
+  height: 350px;
+  /* border: 1px solid red; */
+}
+
+.IR-windmill-body {
+  position: absolute;
+  width: 230px;
+  height: 200px;
+  background-image: url(./../../public/Images/windmill.png);
+  background-size: cover;
+  bottom: 0;
+  /* border: 1px solid blue; */
+}
+
+.IR-windmill-fans-left {
+  position: absolute;
+  width: 230px;
+  height: 200px;
+  background-image: url(./../../public/Images/windmillFan.png);
+  background-size: cover;
+  left: 20px;
+  top: 55px;
+  -moz-animation: windmillloop 15s linear infinite;
+  animation: windmillloop 15s linear infinite;
+}
+
+/* .IR-windmill-fans-right {
+  position: absolute;
+  width: 230px;
+  height: 200px;
+  background-image: url(./../../public/Images/windmillFan.png);
+  background-size: cover;
+  left: 20px;
+  top: 55px;
+  -moz-animation: windmillloop2 15s linear infinite;
+  animation: windmillloop2 15s linear infinite;
+} */
+
+@keyframes windmillloop {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* @keyframes windmillloop2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes riverIR {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -5000px;
+  }
+}
+
+/* 評論----手機版 */
+@media screen and (max-width: 768px) {
+  .IR-commnet {
+    width: 100%;
+    height: 500px;
+  }
+  .IR-commnet-river {
+    position: relative;
+    top: 20px;
+    width: 50000px;
+    height: 80%;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    animation: riverIR 100s linear 0s infinite alternate both;
+    animation-play-state: running;
+  }
+
+  .IR-commnet-info {
+    width: 330px;
+    height: 330px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #d5baa6;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    transition: 0.2s;
+    /* top: 20px; */
+    padding: 30px 30px 20px 30px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .IR-commnet-info:hover {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 20px;
+    z-index: 10;
+  }
+
+  .IR-commnet-info p:nth-child(4) {
+    font-size: 14x;
+    text-align: justify;
+    display: block;
+  }
+
+  .IR-commnet-info p:nth-child(5) {
+    color: #a88686;
+    font-size: 14x;
+    text-align: right;
+    display: block;
+  }
+}

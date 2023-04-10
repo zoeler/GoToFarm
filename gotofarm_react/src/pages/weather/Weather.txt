@@ -1,0 +1,276 @@
+OpenAPI-Weather
+https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/%E9%A0%90%E5%A0%B1/get_v1_rest_datastore_F_C0032_001
+
+PJChen
+https://pjchender.dev/react-bootcamp/docs/book/ch5/5-1
+
+局屬氣象站
+Curl
+curl -X 'GET' \
+  'https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-510F17C6-59E7-43E7-822D-BF19899BA0AC&locationName=%E5%8F%B0%E5%8C%97%E5%B8%82' \
+  -H 'accept: application/json'
+
+Response body
+{
+  "success": "true",
+  "result": {
+    "resource_id": "O-A0003-001",
+    "fields": [
+      {
+        "id": "lat",
+        "type": "Double"
+      },
+      {
+        "id": "lon",
+        "type": "Double"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "stationId",
+        "type": "String"
+      },
+      {
+        "id": "obsTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "elementName",
+        "type": "String"
+      },
+      {
+        "id": "elementValue",
+        "type": "String"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": []
+  }
+}
+
+Response headers
+ access-control-allow-origin: * 
+ connection: keep-alive 
+ content-encoding: gzip 
+ content-type: application/json;charset=utf-8 
+ date: Mon,20 Mar 2023 07:22:32 GMT 
+ strict-transport-security: max-age=16070400; includeSubDomains; preload 
+ transfer-encoding: chunked 
+
+
+一般天氣預報
+Curl
+curl -X 'GET' \
+  'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-510F17C6-59E7-43E7-822D-BF19899BA0AC&locationName=%E8%87%BA%E5%8C%97%E5%B8%82' \
+  -H 'accept: application/json'
+
+	
+Response body
+{
+  "success": "true",
+  "result": {
+    "resource_id": "F-C0032-001",
+    "fields": [
+      {
+        "id": "datasetDescription",
+        "type": "String"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      },
+      {
+        "id": "parameterName",
+        "type": "String"
+      },
+      {
+        "id": "parameterValue",
+        "type": "String"
+      },
+      {
+        "id": "parameterUnit",
+        "type": "String"
+      },
+      {
+        "id": "startTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "endTime",
+        "type": "Timestamp"
+      }
+    ]
+  },
+  "records": {
+    "datasetDescription": "三十六小時天氣預報",
+    "location": [
+      {
+        "locationName": "臺北市",
+        "weatherElement": [
+          {
+            "elementName": "Wx",
+            "time": [
+              {
+                "startTime": "2023-03-20 12:00:00",
+                "endTime": "2023-03-20 18:00:00",
+                "parameter": {
+                  "parameterName": "多雲",
+                  "parameterValue": "4"
+                }
+              },
+              {
+                "startTime": "2023-03-20 18:00:00",
+                "endTime": "2023-03-21 06:00:00",
+                "parameter": {
+                  "parameterName": "多雲",
+                  "parameterValue": "4"
+                }
+              },
+              {
+                "startTime": "2023-03-21 06:00:00",
+                "endTime": "2023-03-21 18:00:00",
+                "parameter": {
+                  "parameterName": "多雲",
+                  "parameterValue": "4"
+                }
+              }
+            ]
+          },
+          {
+            "elementName": "PoP",
+            "time": [
+              {
+                "startTime": "2023-03-20 12:00:00",
+                "endTime": "2023-03-20 18:00:00",
+                "parameter": {
+                  "parameterName": "0",
+                  "parameterUnit": "百分比"
+                }
+              },
+              {
+                "startTime": "2023-03-20 18:00:00",
+                "endTime": "2023-03-21 06:00:00",
+                "parameter": {
+                  "parameterName": "0",
+                  "parameterUnit": "百分比"
+                }
+              },
+              {
+                "startTime": "2023-03-21 06:00:00",
+                "endTime": "2023-03-21 18:00:00",
+                "parameter": {
+                  "parameterName": "0",
+                  "parameterUnit": "百分比"
+                }
+              }
+            ]
+          },
+          {
+            "elementName": "MinT",
+            "time": [
+              {
+                "startTime": "2023-03-20 12:00:00",
+                "endTime": "2023-03-20 18:00:00",
+                "parameter": {
+                  "parameterName": "23",
+                  "parameterUnit": "C"
+                }
+              },
+              {
+                "startTime": "2023-03-20 18:00:00",
+                "endTime": "2023-03-21 06:00:00",
+                "parameter": {
+                  "parameterName": "20",
+                  "parameterUnit": "C"
+                }
+              },
+              {
+                "startTime": "2023-03-21 06:00:00",
+                "endTime": "2023-03-21 18:00:00",
+                "parameter": {
+                  "parameterName": "20",
+                  "parameterUnit": "C"
+                }
+              }
+            ]
+          },
+          {
+            "elementName": "CI",
+            "time": [
+              {
+                "startTime": "2023-03-20 12:00:00",
+                "endTime": "2023-03-20 18:00:00",
+                "parameter": {
+                  "parameterName": "舒適"
+                }
+              },
+              {
+                "startTime": "2023-03-20 18:00:00",
+                "endTime": "2023-03-21 06:00:00",
+                "parameter": {
+                  "parameterName": "稍有寒意至舒適"
+                }
+              },
+              {
+                "startTime": "2023-03-21 06:00:00",
+                "endTime": "2023-03-21 18:00:00",
+                "parameter": {
+                  "parameterName": "稍有寒意至舒適"
+                }
+              }
+            ]
+          },
+          {
+            "elementName": "MaxT",
+            "time": [
+              {
+                "startTime": "2023-03-20 12:00:00",
+                "endTime": "2023-03-20 18:00:00",
+                "parameter": {
+                  "parameterName": "26",
+                  "parameterUnit": "C"
+                }
+              },
+              {
+                "startTime": "2023-03-20 18:00:00",
+                "endTime": "2023-03-21 06:00:00",
+                "parameter": {
+                  "parameterName": "23",
+                  "parameterUnit": "C"
+                }
+              },
+              {
+                "startTime": "2023-03-21 06:00:00",
+                "endTime": "2023-03-21 18:00:00",
+                "parameter": {
+                  "parameterName": "29",
+                  "parameterUnit": "C"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+Response headers
+access-control-allow-origin: * 
+ connection: keep-alive 
+ content-encoding: gzip 
+ content-type: application/json;charset=utf-8 
+ date: Mon,20 Mar 2023 07:25:44 GMT 
+ strict-transport-security: max-age=16070400; includeSubDomains; preload 
+ transfer-encoding: chunked 

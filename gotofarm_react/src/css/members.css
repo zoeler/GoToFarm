@@ -1,0 +1,513 @@
+/* 字體 */
+@font-face {
+  font-family: GenSenRoundedTW-B;
+  src: url('/public/Fonts/GenSenRounded-B.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-M;
+  src: url('/public/Fonts/GenSenRounded-M.otf');
+
+}
+
+@font-face {
+  font-family: c-R;
+  src: url('/public/Fonts/GenSenRounded-R.otf');
+}
+
+@font-face {
+  font-family: GenSenRoundedTW-L;
+  src: url('/public/Fonts/GenSenRounded-L.otf');
+}
+
+/* .member-body{
+  background: url(https://loading.io/asset/644883);
+  
+} */
+
+.members-span {
+  font-family: GenSenRoundedTW-M;
+}
+
+.mombers-a {
+  text-decoration: none;
+}
+
+.m-session {
+  height: 900px;
+  background-image: url(../../public/Images/login-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: -30px;
+  background-attachment: fixed;
+
+  /* background-color: rgb(205, 179, 179); */
+}
+
+.login-session {
+  height: 500px;
+  background-image: url(../../public/Images/login-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background-color: rgb(205, 179, 179); */
+}
+
+.m-page-direction{
+  margin-top: -200px;
+  height: 100%;
+  padding-bottom: 100px;
+
+}
+
+.m-session-direction{
+  height: 100%;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  /* border: 2px dotted blue; */
+  
+}
+
+.m-inner-session {
+  /* outline: 5px dotted blue; */
+  height: fit-content;
+}
+
+.m-left-side {
+  width: 65%;
+  /* width: 960px; */
+  height: 880px;
+  /* outline: 1px red solid; */
+}
+
+.m-greeting {
+  height: 80px;
+}
+
+.m-right-side {
+  /* width: 600px; */
+  width: 35%;
+  height: 880px;
+  pointer-events: none;
+  /* outline: 1px red solid; */
+}
+
+.m-right-card {
+  /* width: 560px; */
+  height: 840px;
+  background-image: url(../../public/Textures/member-card.png);
+  background-size: cover;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.m-member-info {
+  pointer-events: none;
+}
+
+.m-id {
+  pointer-events: none;
+}
+
+.m-member-avacircle {
+  width: 120px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  /* background-color: white; */
+  background-image: url(../../public/Textures/buttonsub.png);
+}
+
+.m-member-avacircle2 {
+  width: 220px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  border-radius: 20%;
+  /* background-color: white; */
+  background-color: #a8868641;
+  border: 8px solid wheat;
+  transition: 0.5s;
+}
+
+.m-member-avacircle2:hover {
+  width: 250px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 8px solid wheat;
+  transition: 0.5s;
+}
+
+.d-inline > span {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+}
+
+.m-input-1 {
+  width: 30%;
+  height: 35px;
+  font-size: 15px;
+  color: #9a682f;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+}
+
+.m-input-2 {
+  width: 55%;
+  height: 35px;
+  font-size: 15px;
+  color: #9a682f;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+}
+
+.m-card-container {
+  width: 95%;
+  height: 95%;
+  /* background-color: rgba(127, 255, 212, 0.295); */
+}
+
+.m-member-btn {
+  background-image: url(../../public/Textures/buttonYmain.png);
+  width: 277px;
+  height: 114px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.m-member-btn2 {
+  background-image: url(../../public/Buttons/m-record-btn.png);
+  width: 288px;
+  height: 145px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.m-btn-p {
+  color: #a88686;
+  font-size: 24px;
+  /* letter-spacing: 0.2em; */
+  text-decoration: none;
+  padding-top: 18px;
+  font-family: GenSenRoundedTW-B;
+}
+.m-circle {
+  margin-right: 15px;
+  width: 80px;
+  aspect-ratio: 1/1;
+  /* border: 3px solid gray; */
+  /* border-radius: 50%; */
+}
+
+.m-member-avacircle {
+  border: 12px wheat;
+  outline: 12px white;
+}
+
+.m-class-week {
+  width: 935px;
+  height: 385px;
+  background-image: url(../../public/Textures/wallpaper.png);
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.m-id > .member-li {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  font-family: GenSenRoundedTW-M;
+}
+
+.member-li > span {
+  color: #a88686;
+}
+
+.m-id-input-bg {
+  background-color: transparent;
+  border: 0px;
+  background-image: url(../../public/Textures/buttonBrown.png);
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.m-id > li > button {
+  width: 35px;
+  height: 28px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 0px;
+  background-image: url(../../public/Icons/edit-Btn.png);
+  background-size: contain;
+}
+.m-hr {
+  width: 80%;
+  height: 4px;
+  background-image: url(../../public/Images/hr-compose.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.m-adward-box {
+  width: 520px;
+  height: 300px;
+  /* background-color: #432f9a4e; */
+}
+
+.m-band-circle {
+  width: 190px;
+  height: 190px;
+  background-image: url(../../public/Textures/buttonYsub.png);
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.m-band-square {
+  width: 200px;
+  height: 190px;
+  /* border: 2px solid black; */
+}
+
+.m-adward-brands {
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 1cm;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: GenSenRoundedTW-M;
+  letter-spacing: 0.2em;
+  background-image: url(../../public/Textures/wallpaperR.png);
+}
+
+.m-card-label > li {
+  font-family: GenSenRoundedTW-M;
+  color: #a88686;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label.png);
+  margin-top: 15px;
+}
+
+.m-card-label > li:hover {
+  font-family: GenSenRoundedTW-M;
+  color: #2c5c58;
+  list-style-type: none;
+  width: 127px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  background-image: url(../../public/Buttons/m-card-label-hover.png);
+  margin-top: 15px;
+}
+
+.m-lable-location {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  margin-right: 255px;
+  padding-top: 120px;
+}
+
+.singn-in-img {
+  background-size: cover;
+  object-fit: cover;
+  border: 0px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.member-wave-side-botton{
+  background-image: url(../../public/Textures/wave.png);
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: -48px;
+  z-index: 100px;
+
+}
+
+.google-session{
+  height: 650px;
+  margin-top: 55px !important;
+  padding: 0px !important;
+
+}
+
+.google-button{
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  background-color: transparent !important;
+}
+
+.google-button:hover{
+  width: 500px;
+  height: 500px;
+  opacity: 0 !important;
+  background-color: transparent !important;
+}
+
+.google-login-button-aria > .element.style{
+  background-color: transparent !important;
+  opacity: 0;
+}
+
+.google-login-button-aria > button {
+  opacity: 0;
+}
+.google-login-button-aria2  {
+  width: 249px;
+  height: 83px;;
+}
+
+.google-login-button-aria2 > .element.style{
+  background-color: transparent !important;
+  opacity: 0
+}
+
+.google-login-button-aria2 > button {
+  opacity: 1;
+  border: 1px solid transparent !important;
+  border-radius: 20px !important;
+  background: url(/public/Buttons/ButtonG.svg) !important;
+  width: 294px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important
+}
+.google-login-button-aria2 > span {
+  opacity: 1;
+  border: 1px solid transparent !important;
+  border-radius: 20px !important;
+  background: url(/public/Buttons/ButtonG.svg) !important;
+  width: 294px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important
+}
+
+.google-login-button-aria2 > button > div{
+  background-color: transparent !important;
+  color:#2c5c58 !important; 
+}
+.google-login-button-aria2 > button > span{
+  background-color: transparent !important;
+  color:#2c5c58 !important; 
+  font-family: GenSenRoundedTW-B;
+  font-weight: 900;
+  font-size: 24px;
+}
+.google-login-button-aria2  > span{
+  background-color: transparent !important;
+  color:#2c5c58 !important; 
+  font-family: GenSenRoundedTW-B;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.google-login-button-aria2 > button > span >a{
+  color:#2c5c58 !important;
+}
+.google-login-button-aria2 > span >a{
+  color:#2c5c58 !important;
+}
+
+.google-login-button-aria2 :hover {
+  transform: translate(2px,2px);
+   background: url(/public/Buttons/ButtonG.svg) !important;
+   opacity: .8;
+  transition: .2s;
+}
+
+.google-logo-size{
+  background-image: url(/public/Icons/Google-circle-logo.png);
+  width: 150px !important;
+  height: 150px;
+ 
+}
+
+.google-inner-user{
+ border: 3px solid rgba(128, 128, 128, 0.227);
+ border-radius: 50% !important;
+ width: 150px !important;
+  height: 150px;
+   background-image: url(/public/Icons/Google-circle-logo.png);
+  
+}
+
+.google-logo-size2{
+  width: 100px !important;
+  aspect-ratio: 1/1;
+}
+
+.gotofarm-logo-effect{
+  border: 5px solid rgba(128, 128, 128, 0.227);
+  border-radius: 50%;
+}
+
+.google-connect-span {
+font-family: GenSenRoundedTW-B;
+color: #2c5c58;
+
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #04aa6d;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+

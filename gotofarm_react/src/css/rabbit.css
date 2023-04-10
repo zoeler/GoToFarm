@@ -1,0 +1,219 @@
+#rabbitgame {
+  padding: 100px 0 150px 0;
+}
+
+.RA-key button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fed635;
+  border: 4px solid rgb(87, 87, 87);
+  font-size: 30px;
+}
+
+.RA-key button:hover {
+  color: #fe6435;
+}
+
+.RA-key button:active {
+  background-color: #f9e699;
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.RA-food button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fe6435;
+  border: 4px solid rgb(87, 87, 87);
+}
+
+.RA-food button:active {
+  background-color: #fe6435;
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.RA-food i {
+  font-size: 30px;
+}
+
+.RA-food button:hover i {
+  color: #fed635;
+}
+
+.RA-info {
+  width: 900px;
+  color: #a88686;
+}
+
+.RA-info p {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.RA-info h4 {
+  color: #2c5c58;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.RA-info span {
+  color: #a35d73;
+  font-weight: 600;
+}
+
+.RA-info span.yellow {
+  color: #fed635;
+  font-weight: 600;
+}
+
+.RA-info span.green {
+  color: #57ac6f;
+  font-weight: 600;
+}
+
+.RA-bar {
+  width: 60%;
+  margin: auto;
+}
+
+.RA-bar .progress {
+  height: 30px;
+  border-radius: 30px;
+}
+
+.RA-again {
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fed635;
+  color: rgb(87, 87, 87);
+  border: 4px solid rgb(87, 87, 87);
+}
+.RA-again:active {
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.RA-gamebody {
+  width: 900px;
+  height: 450px;
+  padding: 20px 0px;
+  background-color: #5a9d5d;
+  /* background-image: url('./../../public/Textures/wallpaperR.png');
+  background-size: cover; */
+  border-radius: 200px;
+  margin: auto;
+  border: 4px solid rgb(87, 87, 87);
+}
+
+.RA-wrap {
+  width: 600px;
+  height: 400px;
+  border: 4px solid rgb(87, 87, 87);
+  background-color: rgb(213, 181, 137);
+  background-image: url('./../../public/Images/line_shibafu.png');
+  background-repeat: repeat;
+  position: relative;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.RA-left {
+  width: 200px;
+}
+
+.RA-right {
+  width: 200px;
+}
+
+.RA-rabbit {
+  position: absolute;
+  background-size: cover;
+}
+
+.RA-start {
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-image: url('./../../public/Images/rabbit.gif');
+}
+
+.RA-end {
+  width: 100px;
+  height: 100px;
+  background-image: url('./../../public/Images/rabbitend.gif');
+}
+
+.RA-face {
+  transform: scaleX(-1);
+}
+
+.RA-carrot {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url('./../../public/Images/carrot.png');
+  background-size: cover;
+}
+
+.RA-yuzu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url('./../../public/Images/yuzu.png');
+  background-size: cover;
+}
+
+.RA-cookie {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url('./../../public/Images/cookie.png');
+  background-size: cover;
+}
+
+.RA-coupon {
+  cursor: pointer;
+  width: 200px;
+}
+
+.RA-coupon:hover span {
+  color: #a35d73;
+}
+
+.RA-coupon:active {
+  transition: 0.2s;
+  transform: translateY(-5px);
+}
+
+.R-Blur {
+  margin-top: -200px;
+  width: 100%;
+  height: 200vh;
+  background-color: #876c568b;
+  position: fixed;
+  z-index: 1000;
+  overflow-y: initial !important;
+}
+
+.R-New {
+  width: 400px;
+  height: 250px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 150px;
+}
